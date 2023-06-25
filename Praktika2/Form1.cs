@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Office.Interop.Word;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp2;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Praktika2
@@ -59,36 +61,7 @@ namespace Praktika2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var origin = new Dictionary<string, string>
-            {
-                {"<DOG_NUM>", textBoxDOG_NUM.Text},
-                {"<DOG_DATE>", dateTimePickerDOG_DATE.Value.ToString("dd.MM.yyyy")},
-                {"<SGA_NUM>", textBoxSGA_NUM.Text},
-                {"<SGA_DATE>", dateTimePickerSGA_DATE.Value.ToString("dd.MM.yyyy")},
-                {"<SGA_UNTIL>", dateTimePickerSGA_UNTIL.Value.ToString("dd.MM.yyyy")},
-                {"<DOV_DATE>", dateTimePickerDOV_DATE.Value.ToString("dd.MM.yyyy")},
-                {"<DOV_NUM>", textBoxDOV_NUM.Text},
-                {"<STUDENT_FIO>", textBoxSTUDENT_FIO.Text},
-                {"<STUDENT_ADRES>", textBoxSTUDENT_ADRES.Text},
-                {"<STUDENT_PHONE>", textBoxSTUDENT_PHONE.Text},
-                {"<STUDENT_EMAIL>", textBoxSTUDENT_EMAIL.Text},
-                {"<YUR_ZAK_FIO>", textBoxYUR_ZAK_FIO.Text},
-                {"<YUR_ORG>", textBoxYUR_ORG.Text},
-                {"<YUR_DOC>", textBoxYUR_DOC.Text},
-                {"<YUR_ADRES>", textBoxYUR_ADRES.Text},
-                {"<YUR_PHONE>", textBoxYUR_PHONE.Text},
-                {"<YUR_BANK>", textBoxYUR_BANK.Text},
-                {"<YUR_ZAK_PHONE>", textBoxYUR_ZAK_PHONE.Text},
-                {"<YUR_ZAK_EMAIL>", textBoxYUR_ZAK_EMAIL.Text},
-                {"<ZAK_FIO>", textBoxZAK_FIO.Text},
-                {"<ZAK_ADRES>", textBoxZAK_ADRES.Text},
-                {"<ZAK_INN>", textBoxZAK_INN.Text},
-                {"<ZAK_PASP_SER>", textBoxZAK_PASP_SER.Text},
-                {"<ZAK_PASP_NOM>", textBoxZAK_PASP_NOM.Text},
-                {"<ZAK_PASP_VID>", textBoxZAK_PASP_VID.Text},
-                {"<ZAK_PHONE>", textBoxZAK_PHONE.Text},
-                {"<ZAK_EMAIL>", textBoxZAK_EMAIL.Text}
-            };
+            
 
 
 
@@ -203,12 +176,144 @@ namespace Praktika2
                     MatKapitalTable.Visible = false;
                     DogovorTable.Visible = false;
                     DopSoglTable.Visible = false;
-                    break;
+                    break;  
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            var origin = new Dictionary<string, string>
+            {
+                {"<DOG_NUM>", textBoxDOG_NUM.Text},
+                {"<DOG_DATE>", dateTimePickerDOG_DATE.Value.ToString("dd.MM.yyyy")},
+                {"<SGA_NUM>", textBoxSGA_NUM.Text},
+                {"<SGA_DATE>", dateTimePickerSGA_DATE.Value.ToString("dd.MM.yyyy")},
+                {"<SGA_UNTIL>", dateTimePickerSGA_UNTIL.Value.ToString("dd.MM.yyyy")},
+                {"<DOV_DATE>", dateTimePickerDOV_DATE.Value.ToString("dd.MM.yyyy")},
+                {"<DOV_NUM>", textBoxDOV_NUM.Text},
+                {"<STUDENT_FIO>", textBoxSTUDENT_FIO.Text},
+                {"<STUDENT_ADRES>", textBoxSTUDENT_ADRES.Text},
+                {"<STUDENT_PHONE>", textBoxSTUDENT_PHONE.Text},
+                {"<STUDENT_EMAIL>", textBoxSTUDENT_EMAIL.Text},
+                {"<YUR_ZAK_FIO>", textBoxYUR_ZAK_FIO.Text},
+                {"<YUR_ORG>", textBoxYUR_ORG.Text},
+                {"<YUR_DOC>", textBoxYUR_DOC.Text},
+                {"<YUR_ADRES>", textBoxYUR_ADRES.Text},
+                {"<YUR_PHONE>", textBoxYUR_PHONE.Text},
+                {"<YUR_BANK>", textBoxYUR_BANK.Text},
+                {"<YUR_ZAK_PHONE>", textBoxYUR_ZAK_PHONE.Text},
+                {"<YUR_ZAK_EMAIL>", textBoxYUR_ZAK_EMAIL.Text},
+                {"<ZAK_FIO>", textBoxZAK_FIO.Text},
+                {"<ZAK_ADRES>", textBoxZAK_ADRES.Text},
+                {"<ZAK_INN>", textBoxZAK_INN.Text},
+                {"<ZAK_PASP_SER>", textBoxZAK_PASP_SER.Text},
+                {"<ZAK_PASP_NOM>", textBoxZAK_PASP_NOM.Text},
+                {"<ZAK_PASP_VID>", textBoxZAK_PASP_VID.Text},
+                {"<ZAK_PHONE>", textBoxZAK_PHONE.Text},
+                {"<ZAK_EMAIL>", textBoxZAK_EMAIL.Text}
+            };
+            switch (comboBox1.SelectedItem.ToString())
+            {
+
+                case ("Акт об оказании услуг"):
+                    Dictionary<string, string> items = new Dictionary<string, string>(origin);
+                    if (checkBox1.Checked)
+                    {
+                        
+                    }
+                    else
+                    {
+                        var paster = new WordPaster("Акт об оказании услуг.docx");
+                        items.Add("<AKT_NUM>", textBoxAKT_NUM.Text);
+                        items.Add("<AKT_DATE>", dateTimePickerAKT_DATE.Value.ToString("dd.MM.yyyy"));
+                        items.Add("<ZAK_F_IO>", ChangeName(textBoxZAK_FIO.Text));
+                        items.Add("<STUDENT_F_IO>", ChangeName(textBoxSTUDENT_FIO.Text));
+                        paster.Process(items);
+                    }
+                    break;
+                case ("Договор"):
+                    if (checkBox1.Checked)
+                    {
+
+                    }
+                    else
+                    {
+
+                    }
+                    break;
+                case ("Доп. соглашение"):
+                    if (checkBox1.Checked)
+                    {
+
+                    }
+                    else
+                    {
+
+                    }
+                    break;
+                case ("Перемена заказчика"):
+                    if (checkBox1.Checked)
+                    {
+
+                    }
+                    else
+                    {
+
+                    }
+                    break;
+                case ("Смена фамилии"):
+                    if (checkBox1.Checked)
+                    {
+
+                    }
+                    else
+                    {
+
+                    }
+                    break;
+                case ("Изменение стоимости"):
+                    if (checkBox1.Checked)
+                    {
+
+                    }
+                    else
+                    {
+
+                    }
+                    break;
+                case ("Мат. капитал"):
+                    if (checkBox1.Checked)
+                    {
+
+                    }
+                    else
+                    {
+
+                    }
+                    break;
+                case ("Переводы"):
+                    if (checkBox1.Checked)
+                    {
+
+                    }
+                    else
+                    {
+
+                    }
+                    break;
+                case ("Перемена цедента"):
+                    if (checkBox1.Checked)
+                    {
+
+                    }
+                    else
+                    {
+
+                    }
+                    break;
+                default:
+                    break;
+            }
 
         }
     }
