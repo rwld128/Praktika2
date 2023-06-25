@@ -37,17 +37,39 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.dateTimePickerDOG_DATE = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerSGA_DATE = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerSGA_UNTIL = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerDOV_DATE = new System.Windows.Forms.DateTimePicker();
+            this.textBoxDOG_NUM = new System.Windows.Forms.TextBox();
+            this.textBoxSGA_NUM = new System.Windows.Forms.TextBox();
+            this.textBoxDOV_NUM = new System.Windows.Forms.TextBox();
+            this.textBoxSTUDENT_FIO = new System.Windows.Forms.TextBox();
+            this.textBoxSTUDENT_ADRES = new System.Windows.Forms.TextBox();
+            this.textBoxSTUDENT_PHONE = new System.Windows.Forms.TextBox();
+            this.textBoxSTUDENT_EMAIL = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.textBoxZAK_FIO = new System.Windows.Forms.TextBox();
+            this.textBoxZAK_ADRES = new System.Windows.Forms.TextBox();
+            this.textBoxZAK_INN = new System.Windows.Forms.TextBox();
+            this.textBoxZAK_PASP_SER = new System.Windows.Forms.TextBox();
+            this.textBoxZAK_PASP_NOM = new System.Windows.Forms.TextBox();
+            this.textBoxZAK_PASP_VID = new System.Windows.Forms.TextBox();
+            this.textBoxZAK_PHONE = new System.Windows.Forms.TextBox();
+            this.textBoxZAK_EMAIL = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -56,15 +78,36 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.textBoxYUR_ZAK_FIO = new System.Windows.Forms.TextBox();
+            this.textBoxYUR_ORG = new System.Windows.Forms.TextBox();
+            this.textBoxYUR_DOC = new System.Windows.Forms.TextBox();
+            this.textBoxYUR_ADRES = new System.Windows.Forms.TextBox();
+            this.textBoxYUR_PHONE = new System.Windows.Forms.TextBox();
+            this.textBoxYUR_BANK = new System.Windows.Forms.TextBox();
+            this.textBoxYUR_ZAK_PHONE = new System.Windows.Forms.TextBox();
+            this.textBoxYUR_ZAK_EMAIL = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.AktTable = new System.Windows.Forms.TableLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.DopSoglTable = new System.Windows.Forms.TableLayoutPanel();
+            this.PeremZakTable = new System.Windows.Forms.TableLayoutPanel();
+            this.IzmStoimTable = new System.Windows.Forms.TableLayoutPanel();
+            this.SmenaFamiliiTable = new System.Windows.Forms.TableLayoutPanel();
+            this.IzmCedTable = new System.Windows.Forms.TableLayoutPanel();
+            this.PerevodiTable = new System.Windows.Forms.TableLayoutPanel();
+            this.MatKapitalTable = new System.Windows.Forms.TableLayoutPanel();
+            this.DogovorTable = new System.Windows.Forms.TableLayoutPanel();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.dateTimePickerAKT_DATE = new System.Windows.Forms.DateTimePicker();
+            this.textBoxAKT_NUM = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.AktTable.SuspendLayout();
             this.SuspendLayout();
             // 
             // checkBox1
@@ -95,6 +138,17 @@
             this.tableLayoutPanel1.Controls.Add(this.label25, 0, 8);
             this.tableLayoutPanel1.Controls.Add(this.label26, 0, 9);
             this.tableLayoutPanel1.Controls.Add(this.label27, 0, 10);
+            this.tableLayoutPanel1.Controls.Add(this.dateTimePickerDOG_DATE, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.dateTimePickerSGA_DATE, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.dateTimePickerSGA_UNTIL, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.dateTimePickerDOV_DATE, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxDOG_NUM, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxSGA_NUM, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxDOV_NUM, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxSTUDENT_FIO, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxSTUDENT_ADRES, 1, 8);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxSTUDENT_PHONE, 1, 9);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxSTUDENT_EMAIL, 1, 10);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 11;
@@ -182,6 +236,119 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Номер доверенности";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(4, 183);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(82, 13);
+            this.label12.TabIndex = 7;
+            this.label12.Text = "ФИО студента";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(4, 209);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(151, 13);
+            this.label25.TabIndex = 8;
+            this.label25.Text = "Адрес проживания студента";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(4, 235);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(141, 13);
+            this.label26.TabIndex = 9;
+            this.label26.Text = "Номер телефона студента";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(4, 261);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(187, 13);
+            this.label27.TabIndex = 10;
+            this.label27.Text = "Адрес электронной почты студента";
+            // 
+            // dateTimePickerDOG_DATE
+            // 
+            this.dateTimePickerDOG_DATE.Location = new System.Drawing.Point(253, 30);
+            this.dateTimePickerDOG_DATE.Name = "dateTimePickerDOG_DATE";
+            this.dateTimePickerDOG_DATE.Size = new System.Drawing.Size(186, 20);
+            this.dateTimePickerDOG_DATE.TabIndex = 11;
+            // 
+            // dateTimePickerSGA_DATE
+            // 
+            this.dateTimePickerSGA_DATE.Location = new System.Drawing.Point(253, 82);
+            this.dateTimePickerSGA_DATE.Name = "dateTimePickerSGA_DATE";
+            this.dateTimePickerSGA_DATE.Size = new System.Drawing.Size(186, 20);
+            this.dateTimePickerSGA_DATE.TabIndex = 12;
+            // 
+            // dateTimePickerSGA_UNTIL
+            // 
+            this.dateTimePickerSGA_UNTIL.Location = new System.Drawing.Point(253, 108);
+            this.dateTimePickerSGA_UNTIL.Name = "dateTimePickerSGA_UNTIL";
+            this.dateTimePickerSGA_UNTIL.Size = new System.Drawing.Size(186, 20);
+            this.dateTimePickerSGA_UNTIL.TabIndex = 13;
+            // 
+            // dateTimePickerDOV_DATE
+            // 
+            this.dateTimePickerDOV_DATE.Location = new System.Drawing.Point(253, 134);
+            this.dateTimePickerDOV_DATE.Name = "dateTimePickerDOV_DATE";
+            this.dateTimePickerDOV_DATE.Size = new System.Drawing.Size(186, 20);
+            this.dateTimePickerDOV_DATE.TabIndex = 14;
+            // 
+            // textBoxDOG_NUM
+            // 
+            this.textBoxDOG_NUM.Location = new System.Drawing.Point(253, 4);
+            this.textBoxDOG_NUM.Name = "textBoxDOG_NUM";
+            this.textBoxDOG_NUM.Size = new System.Drawing.Size(100, 20);
+            this.textBoxDOG_NUM.TabIndex = 15;
+            // 
+            // textBoxSGA_NUM
+            // 
+            this.textBoxSGA_NUM.Location = new System.Drawing.Point(253, 56);
+            this.textBoxSGA_NUM.Name = "textBoxSGA_NUM";
+            this.textBoxSGA_NUM.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSGA_NUM.TabIndex = 16;
+            // 
+            // textBoxDOV_NUM
+            // 
+            this.textBoxDOV_NUM.Location = new System.Drawing.Point(253, 160);
+            this.textBoxDOV_NUM.Name = "textBoxDOV_NUM";
+            this.textBoxDOV_NUM.Size = new System.Drawing.Size(100, 20);
+            this.textBoxDOV_NUM.TabIndex = 17;
+            // 
+            // textBoxSTUDENT_FIO
+            // 
+            this.textBoxSTUDENT_FIO.Location = new System.Drawing.Point(253, 186);
+            this.textBoxSTUDENT_FIO.Name = "textBoxSTUDENT_FIO";
+            this.textBoxSTUDENT_FIO.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSTUDENT_FIO.TabIndex = 18;
+            // 
+            // textBoxSTUDENT_ADRES
+            // 
+            this.textBoxSTUDENT_ADRES.Location = new System.Drawing.Point(253, 212);
+            this.textBoxSTUDENT_ADRES.Name = "textBoxSTUDENT_ADRES";
+            this.textBoxSTUDENT_ADRES.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSTUDENT_ADRES.TabIndex = 19;
+            // 
+            // textBoxSTUDENT_PHONE
+            // 
+            this.textBoxSTUDENT_PHONE.Location = new System.Drawing.Point(253, 238);
+            this.textBoxSTUDENT_PHONE.Name = "textBoxSTUDENT_PHONE";
+            this.textBoxSTUDENT_PHONE.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSTUDENT_PHONE.TabIndex = 20;
+            // 
+            // textBoxSTUDENT_EMAIL
+            // 
+            this.textBoxSTUDENT_EMAIL.Location = new System.Drawing.Point(253, 264);
+            this.textBoxSTUDENT_EMAIL.Name = "textBoxSTUDENT_EMAIL";
+            this.textBoxSTUDENT_EMAIL.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSTUDENT_EMAIL.TabIndex = 21;
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
@@ -196,6 +363,14 @@
             this.tableLayoutPanel2.Controls.Add(this.label14, 0, 5);
             this.tableLayoutPanel2.Controls.Add(this.label15, 0, 6);
             this.tableLayoutPanel2.Controls.Add(this.label16, 0, 7);
+            this.tableLayoutPanel2.Controls.Add(this.textBoxZAK_FIO, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.textBoxZAK_ADRES, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.textBoxZAK_INN, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.textBoxZAK_PASP_SER, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.textBoxZAK_PASP_NOM, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.textBoxZAK_PASP_VID, 1, 5);
+            this.tableLayoutPanel2.Controls.Add(this.textBoxZAK_PHONE, 1, 6);
+            this.tableLayoutPanel2.Controls.Add(this.textBoxZAK_EMAIL, 1, 7);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 329);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 8;
@@ -207,36 +382,8 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(443, 203);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(443, 211);
             this.tableLayoutPanel2.TabIndex = 2;
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.label17, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label18, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.label19, 0, 2);
-            this.tableLayoutPanel3.Controls.Add(this.label20, 0, 3);
-            this.tableLayoutPanel3.Controls.Add(this.label21, 0, 4);
-            this.tableLayoutPanel3.Controls.Add(this.label22, 0, 5);
-            this.tableLayoutPanel3.Controls.Add(this.label23, 0, 6);
-            this.tableLayoutPanel3.Controls.Add(this.label24, 0, 7);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(12, 329);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 8;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(443, 211);
-            this.tableLayoutPanel3.TabIndex = 3;
             // 
             // label8
             // 
@@ -278,15 +425,6 @@
             this.label11.TabIndex = 3;
             this.label11.Text = "Паспорт серия";
             // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(4, 183);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(82, 13);
-            this.label12.TabIndex = 7;
-            this.label12.Text = "ФИО студента";
-            // 
             // label13
             // 
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -321,11 +459,103 @@
             // 
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(4, 189);
+            this.label16.Location = new System.Drawing.Point(4, 190);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(139, 13);
             this.label16.TabIndex = 7;
             this.label16.Text = "Адрес электронной почты";
+            // 
+            // textBoxZAK_FIO
+            // 
+            this.textBoxZAK_FIO.Location = new System.Drawing.Point(251, 4);
+            this.textBoxZAK_FIO.Name = "textBoxZAK_FIO";
+            this.textBoxZAK_FIO.Size = new System.Drawing.Size(100, 20);
+            this.textBoxZAK_FIO.TabIndex = 8;
+            // 
+            // textBoxZAK_ADRES
+            // 
+            this.textBoxZAK_ADRES.Location = new System.Drawing.Point(251, 30);
+            this.textBoxZAK_ADRES.Name = "textBoxZAK_ADRES";
+            this.textBoxZAK_ADRES.Size = new System.Drawing.Size(100, 20);
+            this.textBoxZAK_ADRES.TabIndex = 9;
+            // 
+            // textBoxZAK_INN
+            // 
+            this.textBoxZAK_INN.Location = new System.Drawing.Point(251, 56);
+            this.textBoxZAK_INN.Name = "textBoxZAK_INN";
+            this.textBoxZAK_INN.Size = new System.Drawing.Size(100, 20);
+            this.textBoxZAK_INN.TabIndex = 10;
+            // 
+            // textBoxZAK_PASP_SER
+            // 
+            this.textBoxZAK_PASP_SER.Location = new System.Drawing.Point(251, 82);
+            this.textBoxZAK_PASP_SER.Name = "textBoxZAK_PASP_SER";
+            this.textBoxZAK_PASP_SER.Size = new System.Drawing.Size(100, 20);
+            this.textBoxZAK_PASP_SER.TabIndex = 11;
+            // 
+            // textBoxZAK_PASP_NOM
+            // 
+            this.textBoxZAK_PASP_NOM.Location = new System.Drawing.Point(251, 108);
+            this.textBoxZAK_PASP_NOM.Name = "textBoxZAK_PASP_NOM";
+            this.textBoxZAK_PASP_NOM.Size = new System.Drawing.Size(100, 20);
+            this.textBoxZAK_PASP_NOM.TabIndex = 12;
+            // 
+            // textBoxZAK_PASP_VID
+            // 
+            this.textBoxZAK_PASP_VID.Location = new System.Drawing.Point(251, 134);
+            this.textBoxZAK_PASP_VID.Name = "textBoxZAK_PASP_VID";
+            this.textBoxZAK_PASP_VID.Size = new System.Drawing.Size(100, 20);
+            this.textBoxZAK_PASP_VID.TabIndex = 13;
+            // 
+            // textBoxZAK_PHONE
+            // 
+            this.textBoxZAK_PHONE.Location = new System.Drawing.Point(251, 160);
+            this.textBoxZAK_PHONE.Name = "textBoxZAK_PHONE";
+            this.textBoxZAK_PHONE.Size = new System.Drawing.Size(100, 20);
+            this.textBoxZAK_PHONE.TabIndex = 14;
+            // 
+            // textBoxZAK_EMAIL
+            // 
+            this.textBoxZAK_EMAIL.Location = new System.Drawing.Point(251, 186);
+            this.textBoxZAK_EMAIL.Name = "textBoxZAK_EMAIL";
+            this.textBoxZAK_EMAIL.Size = new System.Drawing.Size(100, 20);
+            this.textBoxZAK_EMAIL.TabIndex = 15;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.1086F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.8914F));
+            this.tableLayoutPanel3.Controls.Add(this.label17, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label18, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.label19, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.label20, 0, 3);
+            this.tableLayoutPanel3.Controls.Add(this.label21, 0, 4);
+            this.tableLayoutPanel3.Controls.Add(this.label22, 0, 5);
+            this.tableLayoutPanel3.Controls.Add(this.label23, 0, 6);
+            this.tableLayoutPanel3.Controls.Add(this.label24, 0, 7);
+            this.tableLayoutPanel3.Controls.Add(this.textBoxYUR_ZAK_FIO, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.textBoxYUR_ORG, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.textBoxYUR_DOC, 1, 2);
+            this.tableLayoutPanel3.Controls.Add(this.textBoxYUR_ADRES, 1, 3);
+            this.tableLayoutPanel3.Controls.Add(this.textBoxYUR_PHONE, 1, 4);
+            this.tableLayoutPanel3.Controls.Add(this.textBoxYUR_BANK, 1, 5);
+            this.tableLayoutPanel3.Controls.Add(this.textBoxYUR_ZAK_PHONE, 1, 6);
+            this.tableLayoutPanel3.Controls.Add(this.textBoxYUR_ZAK_EMAIL, 1, 7);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(12, 329);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 8;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(443, 211);
+            this.tableLayoutPanel3.TabIndex = 3;
             // 
             // label17
             // 
@@ -407,41 +637,61 @@
             this.label24.TabIndex = 7;
             this.label24.Text = "Адрес электронной почты";
             // 
-            // label25
+            // textBoxYUR_ZAK_FIO
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(4, 209);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(151, 13);
-            this.label25.TabIndex = 8;
-            this.label25.Text = "Адрес проживания студента";
+            this.textBoxYUR_ZAK_FIO.Location = new System.Drawing.Point(251, 4);
+            this.textBoxYUR_ZAK_FIO.Name = "textBoxYUR_ZAK_FIO";
+            this.textBoxYUR_ZAK_FIO.Size = new System.Drawing.Size(100, 20);
+            this.textBoxYUR_ZAK_FIO.TabIndex = 8;
             // 
-            // label26
+            // textBoxYUR_ORG
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(4, 235);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(141, 13);
-            this.label26.TabIndex = 9;
-            this.label26.Text = "Номер телефона студента";
+            this.textBoxYUR_ORG.Location = new System.Drawing.Point(251, 30);
+            this.textBoxYUR_ORG.Name = "textBoxYUR_ORG";
+            this.textBoxYUR_ORG.Size = new System.Drawing.Size(100, 20);
+            this.textBoxYUR_ORG.TabIndex = 9;
             // 
-            // label27
+            // textBoxYUR_DOC
             // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(4, 261);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(187, 13);
-            this.label27.TabIndex = 10;
-            this.label27.Text = "Адрес электронной почты студента";
+            this.textBoxYUR_DOC.Location = new System.Drawing.Point(251, 56);
+            this.textBoxYUR_DOC.Name = "textBoxYUR_DOC";
+            this.textBoxYUR_DOC.Size = new System.Drawing.Size(100, 20);
+            this.textBoxYUR_DOC.TabIndex = 10;
             // 
-            // button1
+            // textBoxYUR_ADRES
             // 
-            this.button1.Location = new System.Drawing.Point(12, 563);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Настройки";
-            this.button1.UseVisualStyleBackColor = true;
+            this.textBoxYUR_ADRES.Location = new System.Drawing.Point(251, 82);
+            this.textBoxYUR_ADRES.Name = "textBoxYUR_ADRES";
+            this.textBoxYUR_ADRES.Size = new System.Drawing.Size(100, 20);
+            this.textBoxYUR_ADRES.TabIndex = 11;
+            // 
+            // textBoxYUR_PHONE
+            // 
+            this.textBoxYUR_PHONE.Location = new System.Drawing.Point(251, 108);
+            this.textBoxYUR_PHONE.Name = "textBoxYUR_PHONE";
+            this.textBoxYUR_PHONE.Size = new System.Drawing.Size(100, 20);
+            this.textBoxYUR_PHONE.TabIndex = 12;
+            // 
+            // textBoxYUR_BANK
+            // 
+            this.textBoxYUR_BANK.Location = new System.Drawing.Point(251, 134);
+            this.textBoxYUR_BANK.Name = "textBoxYUR_BANK";
+            this.textBoxYUR_BANK.Size = new System.Drawing.Size(100, 20);
+            this.textBoxYUR_BANK.TabIndex = 13;
+            // 
+            // textBoxYUR_ZAK_PHONE
+            // 
+            this.textBoxYUR_ZAK_PHONE.Location = new System.Drawing.Point(251, 160);
+            this.textBoxYUR_ZAK_PHONE.Name = "textBoxYUR_ZAK_PHONE";
+            this.textBoxYUR_ZAK_PHONE.Size = new System.Drawing.Size(100, 20);
+            this.textBoxYUR_ZAK_PHONE.TabIndex = 14;
+            // 
+            // textBoxYUR_ZAK_EMAIL
+            // 
+            this.textBoxYUR_ZAK_EMAIL.Location = new System.Drawing.Point(251, 186);
+            this.textBoxYUR_ZAK_EMAIL.Name = "textBoxYUR_ZAK_EMAIL";
+            this.textBoxYUR_ZAK_EMAIL.Size = new System.Drawing.Size(100, 20);
+            this.textBoxYUR_ZAK_EMAIL.TabIndex = 15;
             // 
             // button2
             // 
@@ -449,8 +699,9 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 5;
-            this.button2.Text = "Создать";
+            this.button2.Text = "Выбрать";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // comboBox1
             // 
@@ -465,19 +716,209 @@
             "Мат. капитал",
             "Переводы",
             "Перемена цедента"});
-            this.comboBox1.Location = new System.Drawing.Point(214, 563);
+            this.comboBox1.Location = new System.Drawing.Point(214, 565);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(160, 21);
             this.comboBox1.TabIndex = 6;
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.DogovorTable);
+            this.panel1.Controls.Add(this.MatKapitalTable);
+            this.panel1.Controls.Add(this.PerevodiTable);
+            this.panel1.Controls.Add(this.IzmCedTable);
+            this.panel1.Controls.Add(this.SmenaFamiliiTable);
+            this.panel1.Controls.Add(this.IzmStoimTable);
+            this.panel1.Controls.Add(this.PeremZakTable);
+            this.panel1.Controls.Add(this.DopSoglTable);
+            this.panel1.Controls.Add(this.AktTable);
+            this.panel1.Location = new System.Drawing.Point(473, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1042, 528);
+            this.panel1.TabIndex = 7;
+            // 
+            // AktTable
+            // 
+            this.AktTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.AktTable.ColumnCount = 2;
+            this.AktTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.AktTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.AktTable.Controls.Add(this.label28, 0, 0);
+            this.AktTable.Controls.Add(this.label29, 0, 1);
+            this.AktTable.Controls.Add(this.dateTimePickerAKT_DATE, 1, 0);
+            this.AktTable.Controls.Add(this.textBoxAKT_NUM, 1, 1);
+            this.AktTable.Location = new System.Drawing.Point(32, 26);
+            this.AktTable.Name = "AktTable";
+            this.AktTable.RowCount = 2;
+            this.AktTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.AktTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.AktTable.Size = new System.Drawing.Size(308, 100);
+            this.AktTable.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(947, 563);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Создать";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // DopSoglTable
+            // 
+            this.DopSoglTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.DopSoglTable.ColumnCount = 2;
+            this.DopSoglTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.DopSoglTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.DopSoglTable.Location = new System.Drawing.Point(440, 48);
+            this.DopSoglTable.Name = "DopSoglTable";
+            this.DopSoglTable.RowCount = 2;
+            this.DopSoglTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.DopSoglTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.DopSoglTable.Size = new System.Drawing.Size(200, 100);
+            this.DopSoglTable.TabIndex = 1;
+            // 
+            // PeremZakTable
+            // 
+            this.PeremZakTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.PeremZakTable.ColumnCount = 2;
+            this.PeremZakTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.PeremZakTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.PeremZakTable.Location = new System.Drawing.Point(700, 156);
+            this.PeremZakTable.Name = "PeremZakTable";
+            this.PeremZakTable.RowCount = 2;
+            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.PeremZakTable.Size = new System.Drawing.Size(200, 100);
+            this.PeremZakTable.TabIndex = 2;
+            // 
+            // IzmStoimTable
+            // 
+            this.IzmStoimTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.IzmStoimTable.ColumnCount = 2;
+            this.IzmStoimTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.IzmStoimTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.IzmStoimTable.Location = new System.Drawing.Point(440, 315);
+            this.IzmStoimTable.Name = "IzmStoimTable";
+            this.IzmStoimTable.RowCount = 2;
+            this.IzmStoimTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.IzmStoimTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.IzmStoimTable.Size = new System.Drawing.Size(200, 100);
+            this.IzmStoimTable.TabIndex = 3;
+            // 
+            // SmenaFamiliiTable
+            // 
+            this.SmenaFamiliiTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.SmenaFamiliiTable.ColumnCount = 2;
+            this.SmenaFamiliiTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.SmenaFamiliiTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.SmenaFamiliiTable.Location = new System.Drawing.Point(835, 400);
+            this.SmenaFamiliiTable.Name = "SmenaFamiliiTable";
+            this.SmenaFamiliiTable.RowCount = 2;
+            this.SmenaFamiliiTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.SmenaFamiliiTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.SmenaFamiliiTable.Size = new System.Drawing.Size(200, 100);
+            this.SmenaFamiliiTable.TabIndex = 4;
+            // 
+            // IzmCedTable
+            // 
+            this.IzmCedTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.IzmCedTable.ColumnCount = 2;
+            this.IzmCedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.IzmCedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.IzmCedTable.Location = new System.Drawing.Point(440, 182);
+            this.IzmCedTable.Name = "IzmCedTable";
+            this.IzmCedTable.RowCount = 2;
+            this.IzmCedTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.IzmCedTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.IzmCedTable.Size = new System.Drawing.Size(200, 100);
+            this.IzmCedTable.TabIndex = 5;
+            // 
+            // PerevodiTable
+            // 
+            this.PerevodiTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.PerevodiTable.ColumnCount = 2;
+            this.PerevodiTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.PerevodiTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.PerevodiTable.Location = new System.Drawing.Point(700, 287);
+            this.PerevodiTable.Name = "PerevodiTable";
+            this.PerevodiTable.RowCount = 2;
+            this.PerevodiTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.PerevodiTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.PerevodiTable.Size = new System.Drawing.Size(200, 100);
+            this.PerevodiTable.TabIndex = 6;
+            // 
+            // MatKapitalTable
+            // 
+            this.MatKapitalTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.MatKapitalTable.ColumnCount = 2;
+            this.MatKapitalTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.MatKapitalTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.MatKapitalTable.Location = new System.Drawing.Point(136, 292);
+            this.MatKapitalTable.Name = "MatKapitalTable";
+            this.MatKapitalTable.RowCount = 2;
+            this.MatKapitalTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.MatKapitalTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.MatKapitalTable.Size = new System.Drawing.Size(200, 100);
+            this.MatKapitalTable.TabIndex = 7;
+            // 
+            // DogovorTable
+            // 
+            this.DogovorTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.DogovorTable.ColumnCount = 2;
+            this.DogovorTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.DogovorTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.DogovorTable.Location = new System.Drawing.Point(39, 158);
+            this.DogovorTable.Name = "DogovorTable";
+            this.DogovorTable.RowCount = 2;
+            this.DogovorTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.DogovorTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.DogovorTable.Size = new System.Drawing.Size(200, 100);
+            this.DogovorTable.TabIndex = 8;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(4, 1);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(59, 13);
+            this.label28.TabIndex = 0;
+            this.label28.Text = "Дата акта";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(4, 50);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(67, 13);
+            this.label29.TabIndex = 1;
+            this.label29.Text = "Номер акта";
+            // 
+            // dateTimePickerAKT_DATE
+            // 
+            this.dateTimePickerAKT_DATE.Location = new System.Drawing.Point(157, 4);
+            this.dateTimePickerAKT_DATE.Name = "dateTimePickerAKT_DATE";
+            this.dateTimePickerAKT_DATE.Size = new System.Drawing.Size(147, 20);
+            this.dateTimePickerAKT_DATE.TabIndex = 2;
+            // 
+            // textBoxAKT_NUM
+            // 
+            this.textBoxAKT_NUM.Location = new System.Drawing.Point(157, 53);
+            this.textBoxAKT_NUM.Name = "textBoxAKT_NUM";
+            this.textBoxAKT_NUM.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAKT_NUM.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(470, 598);
+            this.ClientSize = new System.Drawing.Size(1527, 598);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -490,6 +931,9 @@
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.AktTable.ResumeLayout(false);
+            this.AktTable.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -528,9 +972,50 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DateTimePicker dateTimePickerDOG_DATE;
+        private System.Windows.Forms.DateTimePicker dateTimePickerSGA_DATE;
+        private System.Windows.Forms.DateTimePicker dateTimePickerSGA_UNTIL;
+        private System.Windows.Forms.DateTimePicker dateTimePickerDOV_DATE;
+        private System.Windows.Forms.TextBox textBoxDOG_NUM;
+        private System.Windows.Forms.TextBox textBoxSGA_NUM;
+        private System.Windows.Forms.TextBox textBoxDOV_NUM;
+        private System.Windows.Forms.TextBox textBoxSTUDENT_FIO;
+        private System.Windows.Forms.TextBox textBoxSTUDENT_ADRES;
+        private System.Windows.Forms.TextBox textBoxSTUDENT_PHONE;
+        private System.Windows.Forms.TextBox textBoxSTUDENT_EMAIL;
+        private System.Windows.Forms.TextBox textBoxZAK_FIO;
+        private System.Windows.Forms.TextBox textBoxZAK_ADRES;
+        private System.Windows.Forms.TextBox textBoxZAK_INN;
+        private System.Windows.Forms.TextBox textBoxZAK_PASP_SER;
+        private System.Windows.Forms.TextBox textBoxZAK_PASP_NOM;
+        private System.Windows.Forms.TextBox textBoxZAK_PASP_VID;
+        private System.Windows.Forms.TextBox textBoxZAK_PHONE;
+        private System.Windows.Forms.TextBox textBoxZAK_EMAIL;
+        private System.Windows.Forms.TextBox textBoxYUR_ZAK_FIO;
+        private System.Windows.Forms.TextBox textBoxYUR_ORG;
+        private System.Windows.Forms.TextBox textBoxYUR_DOC;
+        private System.Windows.Forms.TextBox textBoxYUR_ADRES;
+        private System.Windows.Forms.TextBox textBoxYUR_PHONE;
+        private System.Windows.Forms.TextBox textBoxYUR_BANK;
+        private System.Windows.Forms.TextBox textBoxYUR_ZAK_PHONE;
+        private System.Windows.Forms.TextBox textBoxYUR_ZAK_EMAIL;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TableLayoutPanel AktTable;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TableLayoutPanel DogovorTable;
+        private System.Windows.Forms.TableLayoutPanel MatKapitalTable;
+        private System.Windows.Forms.TableLayoutPanel PerevodiTable;
+        private System.Windows.Forms.TableLayoutPanel IzmCedTable;
+        private System.Windows.Forms.TableLayoutPanel SmenaFamiliiTable;
+        private System.Windows.Forms.TableLayoutPanel IzmStoimTable;
+        private System.Windows.Forms.TableLayoutPanel PeremZakTable;
+        private System.Windows.Forms.TableLayoutPanel DopSoglTable;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.DateTimePicker dateTimePickerAKT_DATE;
+        private System.Windows.Forms.TextBox textBoxAKT_NUM;
     }
 }
 
