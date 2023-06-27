@@ -103,10 +103,37 @@
             this.dateTimePickerAKT_DATE = new System.Windows.Forms.DateTimePicker();
             this.textBoxAKT_NUM = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.textBoxNAPR = new System.Windows.Forms.TextBox();
+            this.textBoxPROFIL = new System.Windows.Forms.TextBox();
+            this.textBoxLEVEL = new System.Windows.Forms.TextBox();
+            this.textBoxFORM = new System.Windows.Forms.TextBox();
+            this.textBoxSROK = new System.Windows.Forms.TextBox();
+            this.textBoxKURS = new System.Windows.Forms.TextBox();
+            this.textBoxYEARS = new System.Windows.Forms.TextBox();
+            this.textBoxFULL_PRICE = new System.Windows.Forms.TextBox();
+            this.textBoxYEARS_PRICE = new System.Windows.Forms.TextBox();
+            this.textBoxSTUD_PASP_SER = new System.Windows.Forms.TextBox();
+            this.textBoxSTUD_PASP_NOM = new System.Windows.Forms.TextBox();
+            this.textBoxSTUD_PASP_VID = new System.Windows.Forms.TextBox();
+            this.dateTimePickerSTUDENT_BD = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.DogovorTable.SuspendLayout();
             this.AktTable.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -735,21 +762,58 @@
             this.panel1.Controls.Add(this.AktTable);
             this.panel1.Location = new System.Drawing.Point(473, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1042, 528);
+            this.panel1.Size = new System.Drawing.Size(910, 528);
             this.panel1.TabIndex = 7;
             // 
             // DogovorTable
             // 
             this.DogovorTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.DogovorTable.ColumnCount = 2;
-            this.DogovorTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.DogovorTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.DogovorTable.Location = new System.Drawing.Point(39, 158);
+            this.DogovorTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.6188F));
+            this.DogovorTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.3812F));
+            this.DogovorTable.Controls.Add(this.label30, 0, 0);
+            this.DogovorTable.Controls.Add(this.label31, 0, 1);
+            this.DogovorTable.Controls.Add(this.label32, 0, 2);
+            this.DogovorTable.Controls.Add(this.label33, 0, 3);
+            this.DogovorTable.Controls.Add(this.label34, 0, 4);
+            this.DogovorTable.Controls.Add(this.label35, 0, 5);
+            this.DogovorTable.Controls.Add(this.label36, 0, 6);
+            this.DogovorTable.Controls.Add(this.label37, 0, 7);
+            this.DogovorTable.Controls.Add(this.label38, 0, 8);
+            this.DogovorTable.Controls.Add(this.label39, 0, 9);
+            this.DogovorTable.Controls.Add(this.label40, 0, 10);
+            this.DogovorTable.Controls.Add(this.label41, 0, 11);
+            this.DogovorTable.Controls.Add(this.label42, 0, 12);
+            this.DogovorTable.Controls.Add(this.textBoxNAPR, 1, 0);
+            this.DogovorTable.Controls.Add(this.textBoxPROFIL, 1, 1);
+            this.DogovorTable.Controls.Add(this.textBoxLEVEL, 1, 2);
+            this.DogovorTable.Controls.Add(this.textBoxFORM, 1, 3);
+            this.DogovorTable.Controls.Add(this.textBoxSROK, 1, 4);
+            this.DogovorTable.Controls.Add(this.textBoxKURS, 1, 5);
+            this.DogovorTable.Controls.Add(this.textBoxYEARS, 1, 6);
+            this.DogovorTable.Controls.Add(this.textBoxFULL_PRICE, 1, 7);
+            this.DogovorTable.Controls.Add(this.textBoxYEARS_PRICE, 1, 8);
+            this.DogovorTable.Controls.Add(this.textBoxSTUD_PASP_SER, 1, 10);
+            this.DogovorTable.Controls.Add(this.textBoxSTUD_PASP_NOM, 1, 11);
+            this.DogovorTable.Controls.Add(this.textBoxSTUD_PASP_VID, 1, 12);
+            this.DogovorTable.Controls.Add(this.dateTimePickerSTUDENT_BD, 1, 9);
+            this.DogovorTable.Location = new System.Drawing.Point(21, 80);
             this.DogovorTable.Name = "DogovorTable";
-            this.DogovorTable.RowCount = 2;
-            this.DogovorTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.DogovorTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.DogovorTable.Size = new System.Drawing.Size(200, 100);
+            this.DogovorTable.RowCount = 13;
+            this.DogovorTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.DogovorTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.DogovorTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.DogovorTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.DogovorTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.DogovorTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.DogovorTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.DogovorTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.DogovorTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.DogovorTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.DogovorTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.DogovorTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.DogovorTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.DogovorTable.Size = new System.Drawing.Size(384, 337);
             this.DogovorTable.TabIndex = 8;
             // 
             // MatKapitalTable
@@ -758,7 +822,7 @@
             this.MatKapitalTable.ColumnCount = 2;
             this.MatKapitalTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.MatKapitalTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.MatKapitalTable.Location = new System.Drawing.Point(136, 292);
+            this.MatKapitalTable.Location = new System.Drawing.Point(420, 426);
             this.MatKapitalTable.Name = "MatKapitalTable";
             this.MatKapitalTable.RowCount = 2;
             this.MatKapitalTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -800,7 +864,7 @@
             this.SmenaFamiliiTable.ColumnCount = 2;
             this.SmenaFamiliiTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.SmenaFamiliiTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.SmenaFamiliiTable.Location = new System.Drawing.Point(835, 400);
+            this.SmenaFamiliiTable.Location = new System.Drawing.Point(675, 400);
             this.SmenaFamiliiTable.Name = "SmenaFamiliiTable";
             this.SmenaFamiliiTable.RowCount = 2;
             this.SmenaFamiliiTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -860,12 +924,12 @@
             this.AktTable.Controls.Add(this.label29, 0, 1);
             this.AktTable.Controls.Add(this.dateTimePickerAKT_DATE, 1, 0);
             this.AktTable.Controls.Add(this.textBoxAKT_NUM, 1, 1);
-            this.AktTable.Location = new System.Drawing.Point(32, 26);
+            this.AktTable.Location = new System.Drawing.Point(3, 3);
             this.AktTable.Name = "AktTable";
             this.AktTable.RowCount = 2;
             this.AktTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.AktTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.AktTable.Size = new System.Drawing.Size(308, 100);
+            this.AktTable.Size = new System.Drawing.Size(308, 59);
             this.AktTable.TabIndex = 0;
             // 
             // label28
@@ -880,7 +944,7 @@
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(4, 50);
+            this.label29.Location = new System.Drawing.Point(4, 30);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(67, 13);
             this.label29.TabIndex = 1;
@@ -895,7 +959,7 @@
             // 
             // textBoxAKT_NUM
             // 
-            this.textBoxAKT_NUM.Location = new System.Drawing.Point(157, 53);
+            this.textBoxAKT_NUM.Location = new System.Drawing.Point(157, 33);
             this.textBoxAKT_NUM.Name = "textBoxAKT_NUM";
             this.textBoxAKT_NUM.Size = new System.Drawing.Size(100, 20);
             this.textBoxAKT_NUM.TabIndex = 3;
@@ -910,11 +974,232 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label30
+            // 
+            this.label30.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(4, 1);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(184, 25);
+            this.label30.TabIndex = 0;
+            this.label30.Text = "Код и наименование направления подготовки";
+            // 
+            // label31
+            // 
+            this.label31.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(4, 27);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(161, 25);
+            this.label31.TabIndex = 1;
+            this.label31.Text = "Направленность (профиль) образовательной программы ";
+            // 
+            // label32
+            // 
+            this.label32.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(4, 59);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(149, 13);
+            this.label32.TabIndex = 2;
+            this.label32.Text = "Бакалавриат/Магистратура";
+            // 
+            // label33
+            // 
+            this.label33.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(4, 85);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(85, 13);
+            this.label33.TabIndex = 3;
+            this.label33.Text = "Очная/Заочная";
+            // 
+            // label34
+            // 
+            this.label34.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(4, 111);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(217, 13);
+            this.label34.TabIndex = 4;
+            this.label34.Text = "Срок обучения (количество месяцев/лет)";
+            // 
+            // label35
+            // 
+            this.label35.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(4, 137);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(93, 13);
+            this.label35.TabIndex = 5;
+            this.label35.Text = "Курс зачисления";
+            // 
+            // label36
+            // 
+            this.label36.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(4, 163);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(190, 13);
+            this.label36.TabIndex = 6;
+            this.label36.Text = "Учебный год (например, 2022/2023)";
+            // 
+            // label37
+            // 
+            this.label37.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(4, 189);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(151, 13);
+            this.label37.TabIndex = 7;
+            this.label37.Text = "Полная стоимость обучения";
+            // 
+            // label38
+            // 
+            this.label38.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(4, 215);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(146, 13);
+            this.label38.TabIndex = 8;
+            this.label38.Text = "Стоимость обучения за год";
+            // 
+            // label39
+            // 
+            this.label39.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(4, 241);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(134, 13);
+            this.label39.TabIndex = 9;
+            this.label39.Text = "Дата рождения студента";
+            // 
+            // label40
+            // 
+            this.label40.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(4, 267);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(131, 13);
+            this.label40.TabIndex = 10;
+            this.label40.Text = "Паспорт студента серия";
+            // 
+            // label41
+            // 
+            this.label41.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(4, 293);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(133, 13);
+            this.label41.TabIndex = 11;
+            this.label41.Text = "Паспорт студента номер";
+            // 
+            // label42
+            // 
+            this.label42.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(4, 319);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(156, 13);
+            this.label42.TabIndex = 12;
+            this.label42.Text = "Паспорт студента кем выдан";
+            // 
+            // textBoxNAPR
+            // 
+            this.textBoxNAPR.Location = new System.Drawing.Point(239, 4);
+            this.textBoxNAPR.Name = "textBoxNAPR";
+            this.textBoxNAPR.Size = new System.Drawing.Size(100, 20);
+            this.textBoxNAPR.TabIndex = 13;
+            // 
+            // textBoxPROFIL
+            // 
+            this.textBoxPROFIL.Location = new System.Drawing.Point(239, 30);
+            this.textBoxPROFIL.Name = "textBoxPROFIL";
+            this.textBoxPROFIL.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPROFIL.TabIndex = 14;
+            // 
+            // textBoxLEVEL
+            // 
+            this.textBoxLEVEL.Location = new System.Drawing.Point(239, 56);
+            this.textBoxLEVEL.Name = "textBoxLEVEL";
+            this.textBoxLEVEL.Size = new System.Drawing.Size(100, 20);
+            this.textBoxLEVEL.TabIndex = 15;
+            // 
+            // textBoxFORM
+            // 
+            this.textBoxFORM.Location = new System.Drawing.Point(239, 82);
+            this.textBoxFORM.Name = "textBoxFORM";
+            this.textBoxFORM.Size = new System.Drawing.Size(100, 20);
+            this.textBoxFORM.TabIndex = 16;
+            // 
+            // textBoxSROK
+            // 
+            this.textBoxSROK.Location = new System.Drawing.Point(239, 108);
+            this.textBoxSROK.Name = "textBoxSROK";
+            this.textBoxSROK.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSROK.TabIndex = 17;
+            // 
+            // textBoxKURS
+            // 
+            this.textBoxKURS.Location = new System.Drawing.Point(239, 134);
+            this.textBoxKURS.Name = "textBoxKURS";
+            this.textBoxKURS.Size = new System.Drawing.Size(100, 20);
+            this.textBoxKURS.TabIndex = 18;
+            // 
+            // textBoxYEARS
+            // 
+            this.textBoxYEARS.Location = new System.Drawing.Point(239, 160);
+            this.textBoxYEARS.Name = "textBoxYEARS";
+            this.textBoxYEARS.Size = new System.Drawing.Size(100, 20);
+            this.textBoxYEARS.TabIndex = 19;
+            // 
+            // textBoxFULL_PRICE
+            // 
+            this.textBoxFULL_PRICE.Location = new System.Drawing.Point(239, 186);
+            this.textBoxFULL_PRICE.Name = "textBoxFULL_PRICE";
+            this.textBoxFULL_PRICE.Size = new System.Drawing.Size(100, 20);
+            this.textBoxFULL_PRICE.TabIndex = 20;
+            // 
+            // textBoxYEARS_PRICE
+            // 
+            this.textBoxYEARS_PRICE.Location = new System.Drawing.Point(239, 212);
+            this.textBoxYEARS_PRICE.Name = "textBoxYEARS_PRICE";
+            this.textBoxYEARS_PRICE.Size = new System.Drawing.Size(100, 20);
+            this.textBoxYEARS_PRICE.TabIndex = 21;
+            // 
+            // textBoxSTUD_PASP_SER
+            // 
+            this.textBoxSTUD_PASP_SER.Location = new System.Drawing.Point(239, 264);
+            this.textBoxSTUD_PASP_SER.Name = "textBoxSTUD_PASP_SER";
+            this.textBoxSTUD_PASP_SER.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSTUD_PASP_SER.TabIndex = 22;
+            // 
+            // textBoxSTUD_PASP_NOM
+            // 
+            this.textBoxSTUD_PASP_NOM.Location = new System.Drawing.Point(239, 290);
+            this.textBoxSTUD_PASP_NOM.Name = "textBoxSTUD_PASP_NOM";
+            this.textBoxSTUD_PASP_NOM.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSTUD_PASP_NOM.TabIndex = 23;
+            // 
+            // textBoxSTUD_PASP_VID
+            // 
+            this.textBoxSTUD_PASP_VID.Location = new System.Drawing.Point(239, 316);
+            this.textBoxSTUD_PASP_VID.Name = "textBoxSTUD_PASP_VID";
+            this.textBoxSTUD_PASP_VID.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSTUD_PASP_VID.TabIndex = 24;
+            // 
+            // dateTimePickerSTUDENT_BD
+            // 
+            this.dateTimePickerSTUDENT_BD.Location = new System.Drawing.Point(239, 238);
+            this.dateTimePickerSTUDENT_BD.Name = "dateTimePickerSTUDENT_BD";
+            this.dateTimePickerSTUDENT_BD.Size = new System.Drawing.Size(141, 20);
+            this.dateTimePickerSTUDENT_BD.TabIndex = 25;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1527, 598);
+            this.ClientSize = new System.Drawing.Size(1396, 598);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.comboBox1);
@@ -932,6 +1217,8 @@
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.DogovorTable.ResumeLayout(false);
+            this.DogovorTable.PerformLayout();
             this.AktTable.ResumeLayout(false);
             this.AktTable.PerformLayout();
             this.ResumeLayout(false);
@@ -1016,6 +1303,32 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.DateTimePicker dateTimePickerAKT_DATE;
         private System.Windows.Forms.TextBox textBoxAKT_NUM;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.TextBox textBoxNAPR;
+        private System.Windows.Forms.TextBox textBoxPROFIL;
+        private System.Windows.Forms.TextBox textBoxLEVEL;
+        private System.Windows.Forms.TextBox textBoxFORM;
+        private System.Windows.Forms.TextBox textBoxSROK;
+        private System.Windows.Forms.TextBox textBoxKURS;
+        private System.Windows.Forms.TextBox textBoxYEARS;
+        private System.Windows.Forms.TextBox textBoxFULL_PRICE;
+        private System.Windows.Forms.TextBox textBoxYEARS_PRICE;
+        private System.Windows.Forms.TextBox textBoxSTUD_PASP_SER;
+        private System.Windows.Forms.TextBox textBoxSTUD_PASP_NOM;
+        private System.Windows.Forms.TextBox textBoxSTUD_PASP_VID;
+        private System.Windows.Forms.DateTimePicker dateTimePickerSTUDENT_BD;
     }
 }
 

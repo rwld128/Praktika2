@@ -212,14 +212,18 @@ namespace Praktika2
                 {"<ZAK_PHONE>", textBoxZAK_PHONE.Text},
                 {"<ZAK_EMAIL>", textBoxZAK_EMAIL.Text}
             };
+            Dictionary<string, string> items = new Dictionary<string, string>(origin);
             switch (comboBox1.SelectedItem.ToString())
             {
-
                 case ("Акт об оказании услуг"):
-                    Dictionary<string, string> items = new Dictionary<string, string>(origin);
                     if (checkBox1.Checked)
                     {
-                        
+                        var paster = new WordPaster("Акт об оказании услуг юр.docx");
+                        items.Add("<AKT_NUM>", textBoxAKT_NUM.Text);
+                        items.Add("<AKT_DATE>", dateTimePickerAKT_DATE.Value.ToString("dd.MM.yyyy"));
+                        items.Add("<YUR_ZAK_F_IO>", ChangeName(textBoxZAK_FIO.Text));
+                        items.Add("<STUDENT_F_IO>", ChangeName(textBoxSTUDENT_FIO.Text));
+                        paster.Process(items);
                     }
                     else
                     {
@@ -234,11 +238,39 @@ namespace Praktika2
                 case ("Договор"):
                     if (checkBox1.Checked)
                     {
-
+                        var paster = new WordPaster("Договор юр.docx");
+                        items.Add("<NAPR>", textBoxNAPR.Text);
+                        items.Add("<PROFIL>", textBoxPROFIL.Text);
+                        items.Add("<LEVEL>", textBoxLEVEL.Text);
+                        items.Add("<FORM>", textBoxFORM.Text);
+                        items.Add("<SROK>", textBoxSROK.Text);
+                        items.Add("<KURS>", textBoxKURS.Text);
+                        items.Add("<YEARS>", textBoxYEARS.Text);
+                        items.Add("<FULL_PRICE>", textBoxFULL_PRICE.Text);
+                        items.Add("<YEARS_PRICE>", textBoxYEARS_PRICE.Text);
+                        items.Add("<STUDENT_BD>", dateTimePickerSTUDENT_BD.Text);
+                        items.Add("<STUD_PASP_SER>", textBoxSTUD_PASP_SER.Text);
+                        items.Add("<STUD_PASP_NOM>", textBoxSTUD_PASP_NOM.Text);
+                        items.Add("<STUD_PASP_VID>", textBoxSTUD_PASP_VID.Text);
+                        paster.Process(items);
                     }
                     else
                     {
-
+                        var paster = new WordPaster("Договор.docx");
+                        items.Add("<NAPR>", textBoxNAPR.Text);
+                        items.Add("<PROFIL>", textBoxPROFIL.Text);
+                        items.Add("<LEVEL>", textBoxLEVEL.Text);
+                        items.Add("<FORM>", textBoxFORM.Text);
+                        items.Add("<SROK>", textBoxSROK.Text);
+                        items.Add("<KURS>", textBoxKURS.Text);
+                        items.Add("<YEARS>", textBoxYEARS.Text);
+                        items.Add("<FULL_PRICE>", textBoxFULL_PRICE.Text);
+                        items.Add("<YEARS_PRICE>", textBoxYEARS_PRICE.Text);
+                        items.Add("<STUDENT_BD>", dateTimePickerSTUDENT_BD.Text);
+                        items.Add("<STUD_PASP_SER>", textBoxSTUD_PASP_SER.Text);
+                        items.Add("<STUD_PASP_NOM>", textBoxSTUD_PASP_NOM.Text);
+                        items.Add("<STUD_PASP_VID>", textBoxSTUD_PASP_VID.Text);
+                        paster.Process(items);
                     }
                     break;
                 case ("Доп. соглашение"):

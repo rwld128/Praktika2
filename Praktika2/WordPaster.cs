@@ -2,6 +2,7 @@
 using Praktika2.Properties;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -39,6 +40,7 @@ namespace WindowsFormsApp2
             try
             {
                 app = new Word.Application();
+                app.Visible = true;
                 Object file = _fileInfo.FullName;
                 Object missing = Type.Missing;
                 app.Documents.Open(file);
@@ -83,6 +85,7 @@ namespace WindowsFormsApp2
                 MessageBox.Show(
                     "Документ сохранен на рабочем столе в папке ''Документы дирекция КГЭУ''",
                     "Успешно");
+                app.Application.Documents.Open(Path.Combine(folderPath, newFileName));
 
                 return true;
             }
@@ -95,7 +98,7 @@ namespace WindowsFormsApp2
                 // Quit the Word application
                 if (app != null)
                 {
-                    app.Quit();
+                    /*app.Quit();*/
                 }
             }
             return false;
