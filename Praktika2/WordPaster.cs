@@ -95,7 +95,6 @@ namespace WindowsFormsApp2
             }
             finally
             {
-                // Quit the Word application
                 if (app != null)
                 {
                     /*app.Quit();*/

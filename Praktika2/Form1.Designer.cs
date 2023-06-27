@@ -90,19 +90,6 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.DogovorTable = new System.Windows.Forms.TableLayoutPanel();
-            this.MatKapitalTable = new System.Windows.Forms.TableLayoutPanel();
-            this.PerevodiTable = new System.Windows.Forms.TableLayoutPanel();
-            this.IzmCedTable = new System.Windows.Forms.TableLayoutPanel();
-            this.SmenaFamiliiTable = new System.Windows.Forms.TableLayoutPanel();
-            this.IzmStoimTable = new System.Windows.Forms.TableLayoutPanel();
-            this.PeremZakTable = new System.Windows.Forms.TableLayoutPanel();
-            this.DopSoglTable = new System.Windows.Forms.TableLayoutPanel();
-            this.AktTable = new System.Windows.Forms.TableLayoutPanel();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.dateTimePickerAKT_DATE = new System.Windows.Forms.DateTimePicker();
-            this.textBoxAKT_NUM = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
@@ -129,6 +116,19 @@
             this.textBoxSTUD_PASP_NOM = new System.Windows.Forms.TextBox();
             this.textBoxSTUD_PASP_VID = new System.Windows.Forms.TextBox();
             this.dateTimePickerSTUDENT_BD = new System.Windows.Forms.DateTimePicker();
+            this.MatKapitalTable = new System.Windows.Forms.TableLayoutPanel();
+            this.PerevodiTable = new System.Windows.Forms.TableLayoutPanel();
+            this.IzmCedTable = new System.Windows.Forms.TableLayoutPanel();
+            this.SmenaFamiliiTable = new System.Windows.Forms.TableLayoutPanel();
+            this.IzmStoimTable = new System.Windows.Forms.TableLayoutPanel();
+            this.PeremZakTable = new System.Windows.Forms.TableLayoutPanel();
+            this.DopSoglTable = new System.Windows.Forms.TableLayoutPanel();
+            this.AktTable = new System.Windows.Forms.TableLayoutPanel();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.dateTimePickerAKT_DATE = new System.Windows.Forms.DateTimePicker();
+            this.textBoxAKT_NUM = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -816,164 +816,6 @@
             this.DogovorTable.Size = new System.Drawing.Size(384, 337);
             this.DogovorTable.TabIndex = 8;
             // 
-            // MatKapitalTable
-            // 
-            this.MatKapitalTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.MatKapitalTable.ColumnCount = 2;
-            this.MatKapitalTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.MatKapitalTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.MatKapitalTable.Location = new System.Drawing.Point(420, 426);
-            this.MatKapitalTable.Name = "MatKapitalTable";
-            this.MatKapitalTable.RowCount = 2;
-            this.MatKapitalTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.MatKapitalTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.MatKapitalTable.Size = new System.Drawing.Size(200, 100);
-            this.MatKapitalTable.TabIndex = 7;
-            // 
-            // PerevodiTable
-            // 
-            this.PerevodiTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.PerevodiTable.ColumnCount = 2;
-            this.PerevodiTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.PerevodiTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.PerevodiTable.Location = new System.Drawing.Point(700, 287);
-            this.PerevodiTable.Name = "PerevodiTable";
-            this.PerevodiTable.RowCount = 2;
-            this.PerevodiTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.PerevodiTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.PerevodiTable.Size = new System.Drawing.Size(200, 100);
-            this.PerevodiTable.TabIndex = 6;
-            // 
-            // IzmCedTable
-            // 
-            this.IzmCedTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.IzmCedTable.ColumnCount = 2;
-            this.IzmCedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.IzmCedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.IzmCedTable.Location = new System.Drawing.Point(440, 182);
-            this.IzmCedTable.Name = "IzmCedTable";
-            this.IzmCedTable.RowCount = 2;
-            this.IzmCedTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.IzmCedTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.IzmCedTable.Size = new System.Drawing.Size(200, 100);
-            this.IzmCedTable.TabIndex = 5;
-            // 
-            // SmenaFamiliiTable
-            // 
-            this.SmenaFamiliiTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.SmenaFamiliiTable.ColumnCount = 2;
-            this.SmenaFamiliiTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.SmenaFamiliiTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.SmenaFamiliiTable.Location = new System.Drawing.Point(675, 400);
-            this.SmenaFamiliiTable.Name = "SmenaFamiliiTable";
-            this.SmenaFamiliiTable.RowCount = 2;
-            this.SmenaFamiliiTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.SmenaFamiliiTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.SmenaFamiliiTable.Size = new System.Drawing.Size(200, 100);
-            this.SmenaFamiliiTable.TabIndex = 4;
-            // 
-            // IzmStoimTable
-            // 
-            this.IzmStoimTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.IzmStoimTable.ColumnCount = 2;
-            this.IzmStoimTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.IzmStoimTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.IzmStoimTable.Location = new System.Drawing.Point(440, 315);
-            this.IzmStoimTable.Name = "IzmStoimTable";
-            this.IzmStoimTable.RowCount = 2;
-            this.IzmStoimTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.IzmStoimTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.IzmStoimTable.Size = new System.Drawing.Size(200, 100);
-            this.IzmStoimTable.TabIndex = 3;
-            // 
-            // PeremZakTable
-            // 
-            this.PeremZakTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.PeremZakTable.ColumnCount = 2;
-            this.PeremZakTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.PeremZakTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.PeremZakTable.Location = new System.Drawing.Point(700, 156);
-            this.PeremZakTable.Name = "PeremZakTable";
-            this.PeremZakTable.RowCount = 2;
-            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.PeremZakTable.Size = new System.Drawing.Size(200, 100);
-            this.PeremZakTable.TabIndex = 2;
-            // 
-            // DopSoglTable
-            // 
-            this.DopSoglTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.DopSoglTable.ColumnCount = 2;
-            this.DopSoglTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.DopSoglTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.DopSoglTable.Location = new System.Drawing.Point(440, 48);
-            this.DopSoglTable.Name = "DopSoglTable";
-            this.DopSoglTable.RowCount = 2;
-            this.DopSoglTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.DopSoglTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.DopSoglTable.Size = new System.Drawing.Size(200, 100);
-            this.DopSoglTable.TabIndex = 1;
-            // 
-            // AktTable
-            // 
-            this.AktTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.AktTable.ColumnCount = 2;
-            this.AktTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.AktTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.AktTable.Controls.Add(this.label28, 0, 0);
-            this.AktTable.Controls.Add(this.label29, 0, 1);
-            this.AktTable.Controls.Add(this.dateTimePickerAKT_DATE, 1, 0);
-            this.AktTable.Controls.Add(this.textBoxAKT_NUM, 1, 1);
-            this.AktTable.Location = new System.Drawing.Point(3, 3);
-            this.AktTable.Name = "AktTable";
-            this.AktTable.RowCount = 2;
-            this.AktTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.AktTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.AktTable.Size = new System.Drawing.Size(308, 59);
-            this.AktTable.TabIndex = 0;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(4, 1);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(59, 13);
-            this.label28.TabIndex = 0;
-            this.label28.Text = "Дата акта";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(4, 30);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(67, 13);
-            this.label29.TabIndex = 1;
-            this.label29.Text = "Номер акта";
-            // 
-            // dateTimePickerAKT_DATE
-            // 
-            this.dateTimePickerAKT_DATE.Location = new System.Drawing.Point(157, 4);
-            this.dateTimePickerAKT_DATE.Name = "dateTimePickerAKT_DATE";
-            this.dateTimePickerAKT_DATE.Size = new System.Drawing.Size(147, 20);
-            this.dateTimePickerAKT_DATE.TabIndex = 2;
-            // 
-            // textBoxAKT_NUM
-            // 
-            this.textBoxAKT_NUM.Location = new System.Drawing.Point(157, 33);
-            this.textBoxAKT_NUM.Name = "textBoxAKT_NUM";
-            this.textBoxAKT_NUM.Size = new System.Drawing.Size(100, 20);
-            this.textBoxAKT_NUM.TabIndex = 3;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(947, 563);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Создать";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // label30
             // 
             this.label30.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -1194,6 +1036,164 @@
             this.dateTimePickerSTUDENT_BD.Name = "dateTimePickerSTUDENT_BD";
             this.dateTimePickerSTUDENT_BD.Size = new System.Drawing.Size(141, 20);
             this.dateTimePickerSTUDENT_BD.TabIndex = 25;
+            // 
+            // MatKapitalTable
+            // 
+            this.MatKapitalTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.MatKapitalTable.ColumnCount = 2;
+            this.MatKapitalTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.MatKapitalTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.MatKapitalTable.Location = new System.Drawing.Point(420, 426);
+            this.MatKapitalTable.Name = "MatKapitalTable";
+            this.MatKapitalTable.RowCount = 2;
+            this.MatKapitalTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.MatKapitalTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.MatKapitalTable.Size = new System.Drawing.Size(200, 100);
+            this.MatKapitalTable.TabIndex = 7;
+            // 
+            // PerevodiTable
+            // 
+            this.PerevodiTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.PerevodiTable.ColumnCount = 2;
+            this.PerevodiTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.PerevodiTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.PerevodiTable.Location = new System.Drawing.Point(700, 287);
+            this.PerevodiTable.Name = "PerevodiTable";
+            this.PerevodiTable.RowCount = 2;
+            this.PerevodiTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.PerevodiTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.PerevodiTable.Size = new System.Drawing.Size(200, 100);
+            this.PerevodiTable.TabIndex = 6;
+            // 
+            // IzmCedTable
+            // 
+            this.IzmCedTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.IzmCedTable.ColumnCount = 2;
+            this.IzmCedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.IzmCedTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.IzmCedTable.Location = new System.Drawing.Point(440, 182);
+            this.IzmCedTable.Name = "IzmCedTable";
+            this.IzmCedTable.RowCount = 2;
+            this.IzmCedTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.IzmCedTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.IzmCedTable.Size = new System.Drawing.Size(200, 100);
+            this.IzmCedTable.TabIndex = 5;
+            // 
+            // SmenaFamiliiTable
+            // 
+            this.SmenaFamiliiTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.SmenaFamiliiTable.ColumnCount = 2;
+            this.SmenaFamiliiTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.SmenaFamiliiTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.SmenaFamiliiTable.Location = new System.Drawing.Point(675, 400);
+            this.SmenaFamiliiTable.Name = "SmenaFamiliiTable";
+            this.SmenaFamiliiTable.RowCount = 2;
+            this.SmenaFamiliiTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.SmenaFamiliiTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.SmenaFamiliiTable.Size = new System.Drawing.Size(200, 100);
+            this.SmenaFamiliiTable.TabIndex = 4;
+            // 
+            // IzmStoimTable
+            // 
+            this.IzmStoimTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.IzmStoimTable.ColumnCount = 2;
+            this.IzmStoimTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.IzmStoimTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.IzmStoimTable.Location = new System.Drawing.Point(440, 315);
+            this.IzmStoimTable.Name = "IzmStoimTable";
+            this.IzmStoimTable.RowCount = 2;
+            this.IzmStoimTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.IzmStoimTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.IzmStoimTable.Size = new System.Drawing.Size(200, 100);
+            this.IzmStoimTable.TabIndex = 3;
+            // 
+            // PeremZakTable
+            // 
+            this.PeremZakTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.PeremZakTable.ColumnCount = 2;
+            this.PeremZakTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.PeremZakTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.PeremZakTable.Location = new System.Drawing.Point(700, 156);
+            this.PeremZakTable.Name = "PeremZakTable";
+            this.PeremZakTable.RowCount = 2;
+            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.PeremZakTable.Size = new System.Drawing.Size(200, 100);
+            this.PeremZakTable.TabIndex = 2;
+            // 
+            // DopSoglTable
+            // 
+            this.DopSoglTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.DopSoglTable.ColumnCount = 2;
+            this.DopSoglTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.DopSoglTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.DopSoglTable.Location = new System.Drawing.Point(440, 48);
+            this.DopSoglTable.Name = "DopSoglTable";
+            this.DopSoglTable.RowCount = 2;
+            this.DopSoglTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.DopSoglTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.DopSoglTable.Size = new System.Drawing.Size(200, 100);
+            this.DopSoglTable.TabIndex = 1;
+            // 
+            // AktTable
+            // 
+            this.AktTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.AktTable.ColumnCount = 2;
+            this.AktTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.AktTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.AktTable.Controls.Add(this.label28, 0, 0);
+            this.AktTable.Controls.Add(this.label29, 0, 1);
+            this.AktTable.Controls.Add(this.dateTimePickerAKT_DATE, 1, 0);
+            this.AktTable.Controls.Add(this.textBoxAKT_NUM, 1, 1);
+            this.AktTable.Location = new System.Drawing.Point(3, 3);
+            this.AktTable.Name = "AktTable";
+            this.AktTable.RowCount = 2;
+            this.AktTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.AktTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.AktTable.Size = new System.Drawing.Size(308, 59);
+            this.AktTable.TabIndex = 0;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(4, 1);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(59, 13);
+            this.label28.TabIndex = 0;
+            this.label28.Text = "Дата акта";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(4, 30);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(67, 13);
+            this.label29.TabIndex = 1;
+            this.label29.Text = "Номер акта";
+            // 
+            // dateTimePickerAKT_DATE
+            // 
+            this.dateTimePickerAKT_DATE.Location = new System.Drawing.Point(157, 4);
+            this.dateTimePickerAKT_DATE.Name = "dateTimePickerAKT_DATE";
+            this.dateTimePickerAKT_DATE.Size = new System.Drawing.Size(147, 20);
+            this.dateTimePickerAKT_DATE.TabIndex = 2;
+            // 
+            // textBoxAKT_NUM
+            // 
+            this.textBoxAKT_NUM.Location = new System.Drawing.Point(157, 33);
+            this.textBoxAKT_NUM.Name = "textBoxAKT_NUM";
+            this.textBoxAKT_NUM.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAKT_NUM.TabIndex = 3;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(947, 563);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Создать";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
