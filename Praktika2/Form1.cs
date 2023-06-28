@@ -216,60 +216,43 @@ namespace Praktika2
             switch (comboBox1.SelectedItem.ToString())
             {
                 case ("Акт об оказании услуг"):
+                    items.Add("<AKT_NUM>", textBoxAKT_NUM.Text);
+                    items.Add("<AKT_DATE>", dateTimePickerAKT_DATE.Value.ToString("dd.MM.yyyy"));
+                    items.Add("<YUR_ZAK_F_IO>", ChangeName(textBoxZAK_FIO.Text));
+                    items.Add("<STUDENT_F_IO>", ChangeName(textBoxSTUDENT_FIO.Text));
                     if (checkBox1.Checked)
                     {
                         var paster = new WordPaster("Акт об оказании услуг юр.docx");
-                        items.Add("<AKT_NUM>", textBoxAKT_NUM.Text);
-                        items.Add("<AKT_DATE>", dateTimePickerAKT_DATE.Value.ToString("dd.MM.yyyy"));
-                        items.Add("<YUR_ZAK_F_IO>", ChangeName(textBoxZAK_FIO.Text));
-                        items.Add("<STUDENT_F_IO>", ChangeName(textBoxSTUDENT_FIO.Text));
                         paster.Process(items);
                     }
                     else
                     {
                         var paster = new WordPaster("Акт об оказании услуг.docx");
-                        items.Add("<AKT_NUM>", textBoxAKT_NUM.Text);
-                        items.Add("<AKT_DATE>", dateTimePickerAKT_DATE.Value.ToString("dd.MM.yyyy"));
-                        items.Add("<ZAK_F_IO>", ChangeName(textBoxZAK_FIO.Text));
-                        items.Add("<STUDENT_F_IO>", ChangeName(textBoxSTUDENT_FIO.Text));
                         paster.Process(items);
                     }
                     break;
                 case ("Договор"):
+                    items.Add("<NAPR>", textBoxNAPR.Text);
+                    items.Add("<PROFIL>", textBoxPROFIL.Text);
+                    items.Add("<LEVEL>", textBoxLEVEL.Text);
+                    items.Add("<FORM>", textBoxFORM.Text);
+                    items.Add("<SROK>", textBoxSROK.Text);
+                    items.Add("<KURS>", textBoxKURS.Text);
+                    items.Add("<YEARS>", textBoxYEARS.Text);
+                    items.Add("<FULL_PRICE>", textBoxFULL_PRICE.Text);
+                    items.Add("<YEARS_PRICE>", textBoxYEARS_PRICE.Text);
+                    items.Add("<STUDENT_BD>", dateTimePickerSTUDENT_BD.Text);
+                    items.Add("<STUD_PASP_SER>", textBoxSTUD_PASP_SER.Text);
+                    items.Add("<STUD_PASP_NOM>", textBoxSTUD_PASP_NOM.Text);
+                    items.Add("<STUD_PASP_VID>", textBoxSTUD_PASP_VID.Text);
                     if (checkBox1.Checked)
                     {
                         var paster = new WordPaster("Договор юр.docx");
-                        items.Add("<NAPR>", textBoxNAPR.Text);
-                        items.Add("<PROFIL>", textBoxPROFIL.Text);
-                        items.Add("<LEVEL>", textBoxLEVEL.Text);
-                        items.Add("<FORM>", textBoxFORM.Text);
-                        items.Add("<SROK>", textBoxSROK.Text);
-                        items.Add("<KURS>", textBoxKURS.Text);
-                        items.Add("<YEARS>", textBoxYEARS.Text);
-                        items.Add("<FULL_PRICE>", textBoxFULL_PRICE.Text);
-                        items.Add("<YEARS_PRICE>", textBoxYEARS_PRICE.Text);
-                        items.Add("<STUDENT_BD>", dateTimePickerSTUDENT_BD.Text);
-                        items.Add("<STUD_PASP_SER>", textBoxSTUD_PASP_SER.Text);
-                        items.Add("<STUD_PASP_NOM>", textBoxSTUD_PASP_NOM.Text);
-                        items.Add("<STUD_PASP_VID>", textBoxSTUD_PASP_VID.Text);
                         paster.Process(items);
                     }
                     else
                     {
                         var paster = new WordPaster("Договор.docx");
-                        items.Add("<NAPR>", textBoxNAPR.Text);
-                        items.Add("<PROFIL>", textBoxPROFIL.Text);
-                        items.Add("<LEVEL>", textBoxLEVEL.Text);
-                        items.Add("<FORM>", textBoxFORM.Text);
-                        items.Add("<SROK>", textBoxSROK.Text);
-                        items.Add("<KURS>", textBoxKURS.Text);
-                        items.Add("<YEARS>", textBoxYEARS.Text);
-                        items.Add("<FULL_PRICE>", textBoxFULL_PRICE.Text);
-                        items.Add("<YEARS_PRICE>", textBoxYEARS_PRICE.Text);
-                        items.Add("<STUDENT_BD>", dateTimePickerSTUDENT_BD.Text);
-                        items.Add("<STUD_PASP_SER>", textBoxSTUD_PASP_SER.Text);
-                        items.Add("<STUD_PASP_NOM>", textBoxSTUD_PASP_NOM.Text);
-                        items.Add("<STUD_PASP_VID>", textBoxSTUD_PASP_VID.Text);
                         paster.Process(items);
                     }
                     break;
@@ -284,13 +267,24 @@ namespace Praktika2
                     }
                     break;
                 case ("Перемена заказчика"):
+                    items.Add("<SOGL_ZAK_NUM>", textBoxSOGL_ZAK_NUM.Text);
+                    items.Add("<SOGL_ZAK_DATE>", dateTimePickerSOGL_ZAK_DATE.Text);
+                    items.Add("<NEW_ZAK_FIO>", textBoxNEW_ZAK_FIO.Text);
+                    items.Add("<NEW_ZAK_ADRES>", textBoxNEW_ZAK_ADRES.Text);
+                    items.Add("<NEW_ZAK_PHONE>", textBoxNEW_ZAK_PHONE.Text);
+                    items.Add("<NEW_ZAK_EMAIL>", textBoxNEW_ZAK_EMAIL.Text);
+                    items.Add("<NEW_INN_PASP_BANK>", textBoxNEW_INN_PASP_BANK.Text);
+                    items.Add("<NEW_ZAK_EKZ>", textBoxNEW_ZAK_EKZ.Text);
+                    items.Add("<STUDENT_F_IO>", ChangeName(textBoxSTUDENT_FIO.Text));
                     if (checkBox1.Checked)
                     {
-
+                        var paster = new WordPaster("Перемена заказчика юр.docx");
+                        paster.Process(items);
                     }
                     else
                     {
-
+                        var paster = new WordPaster("Перемена заказчика.docx");
+                        paster.Process(items);
                     }
                     break;
                 case ("Смена фамилии"):

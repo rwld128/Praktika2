@@ -121,7 +121,6 @@
             this.IzmCedTable = new System.Windows.Forms.TableLayoutPanel();
             this.SmenaFamiliiTable = new System.Windows.Forms.TableLayoutPanel();
             this.IzmStoimTable = new System.Windows.Forms.TableLayoutPanel();
-            this.PeremZakTable = new System.Windows.Forms.TableLayoutPanel();
             this.DopSoglTable = new System.Windows.Forms.TableLayoutPanel();
             this.AktTable = new System.Windows.Forms.TableLayoutPanel();
             this.label28 = new System.Windows.Forms.Label();
@@ -129,12 +128,30 @@
             this.dateTimePickerAKT_DATE = new System.Windows.Forms.DateTimePicker();
             this.textBoxAKT_NUM = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.PeremZakTable = new System.Windows.Forms.TableLayoutPanel();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.textBoxSOGL_ZAK_NUM = new System.Windows.Forms.TextBox();
+            this.textBoxNEW_ZAK_FIO = new System.Windows.Forms.TextBox();
+            this.textBoxNEW_ZAK_ADRES = new System.Windows.Forms.TextBox();
+            this.textBoxNEW_ZAK_PHONE = new System.Windows.Forms.TextBox();
+            this.textBoxNEW_ZAK_EMAIL = new System.Windows.Forms.TextBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.textBoxNEW_INN_PASP_BANK = new System.Windows.Forms.TextBox();
+            this.textBoxNEW_ZAK_EKZ = new System.Windows.Forms.TextBox();
+            this.dateTimePickerSOGL_ZAK_DATE = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.DogovorTable.SuspendLayout();
             this.AktTable.SuspendLayout();
+            this.PeremZakTable.SuspendLayout();
             this.SuspendLayout();
             // 
             // checkBox1
@@ -751,13 +768,13 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.PeremZakTable);
             this.panel1.Controls.Add(this.DogovorTable);
             this.panel1.Controls.Add(this.MatKapitalTable);
             this.panel1.Controls.Add(this.PerevodiTable);
             this.panel1.Controls.Add(this.IzmCedTable);
             this.panel1.Controls.Add(this.SmenaFamiliiTable);
             this.panel1.Controls.Add(this.IzmStoimTable);
-            this.panel1.Controls.Add(this.PeremZakTable);
             this.panel1.Controls.Add(this.DopSoglTable);
             this.panel1.Controls.Add(this.AktTable);
             this.panel1.Location = new System.Drawing.Point(473, 12);
@@ -1043,7 +1060,7 @@
             this.MatKapitalTable.ColumnCount = 2;
             this.MatKapitalTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.MatKapitalTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.MatKapitalTable.Location = new System.Drawing.Point(420, 426);
+            this.MatKapitalTable.Location = new System.Drawing.Point(284, 452);
             this.MatKapitalTable.Name = "MatKapitalTable";
             this.MatKapitalTable.RowCount = 2;
             this.MatKapitalTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -1057,7 +1074,7 @@
             this.PerevodiTable.ColumnCount = 2;
             this.PerevodiTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.PerevodiTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.PerevodiTable.Location = new System.Drawing.Point(700, 287);
+            this.PerevodiTable.Location = new System.Drawing.Point(440, 52);
             this.PerevodiTable.Name = "PerevodiTable";
             this.PerevodiTable.RowCount = 2;
             this.PerevodiTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -1085,7 +1102,7 @@
             this.SmenaFamiliiTable.ColumnCount = 2;
             this.SmenaFamiliiTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.SmenaFamiliiTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.SmenaFamiliiTable.Location = new System.Drawing.Point(675, 400);
+            this.SmenaFamiliiTable.Location = new System.Drawing.Point(511, 449);
             this.SmenaFamiliiTable.Name = "SmenaFamiliiTable";
             this.SmenaFamiliiTable.RowCount = 2;
             this.SmenaFamiliiTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -1107,27 +1124,13 @@
             this.IzmStoimTable.Size = new System.Drawing.Size(200, 100);
             this.IzmStoimTable.TabIndex = 3;
             // 
-            // PeremZakTable
-            // 
-            this.PeremZakTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.PeremZakTable.ColumnCount = 2;
-            this.PeremZakTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.PeremZakTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.PeremZakTable.Location = new System.Drawing.Point(700, 156);
-            this.PeremZakTable.Name = "PeremZakTable";
-            this.PeremZakTable.RowCount = 2;
-            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.PeremZakTable.Size = new System.Drawing.Size(200, 100);
-            this.PeremZakTable.TabIndex = 2;
-            // 
             // DopSoglTable
             // 
             this.DopSoglTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.DopSoglTable.ColumnCount = 2;
             this.DopSoglTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.DopSoglTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.DopSoglTable.Location = new System.Drawing.Point(440, 48);
+            this.DopSoglTable.Location = new System.Drawing.Point(42, 449);
             this.DopSoglTable.Name = "DopSoglTable";
             this.DopSoglTable.RowCount = 2;
             this.DopSoglTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -1195,6 +1198,178 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // PeremZakTable
+            // 
+            this.PeremZakTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.PeremZakTable.ColumnCount = 2;
+            this.PeremZakTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49F));
+            this.PeremZakTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51F));
+            this.PeremZakTable.Controls.Add(this.label43, 0, 0);
+            this.PeremZakTable.Controls.Add(this.label44, 0, 1);
+            this.PeremZakTable.Controls.Add(this.label45, 0, 2);
+            this.PeremZakTable.Controls.Add(this.label46, 0, 3);
+            this.PeremZakTable.Controls.Add(this.label47, 0, 4);
+            this.PeremZakTable.Controls.Add(this.label50, 0, 7);
+            this.PeremZakTable.Controls.Add(this.textBoxSOGL_ZAK_NUM, 1, 0);
+            this.PeremZakTable.Controls.Add(this.textBoxNEW_ZAK_FIO, 1, 2);
+            this.PeremZakTable.Controls.Add(this.textBoxNEW_ZAK_ADRES, 1, 3);
+            this.PeremZakTable.Controls.Add(this.textBoxNEW_ZAK_PHONE, 1, 4);
+            this.PeremZakTable.Controls.Add(this.textBoxNEW_ZAK_EMAIL, 1, 5);
+            this.PeremZakTable.Controls.Add(this.label49, 0, 5);
+            this.PeremZakTable.Controls.Add(this.label48, 0, 6);
+            this.PeremZakTable.Controls.Add(this.textBoxNEW_INN_PASP_BANK, 1, 6);
+            this.PeremZakTable.Controls.Add(this.textBoxNEW_ZAK_EKZ, 1, 7);
+            this.PeremZakTable.Controls.Add(this.dateTimePickerSOGL_ZAK_DATE, 1, 1);
+            this.PeremZakTable.Location = new System.Drawing.Point(675, 52);
+            this.PeremZakTable.Name = "PeremZakTable";
+            this.PeremZakTable.RowCount = 8;
+            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.PeremZakTable.Size = new System.Drawing.Size(200, 234);
+            this.PeremZakTable.TabIndex = 9;
+            // 
+            // label43
+            // 
+            this.label43.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(4, 1);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(68, 25);
+            this.label43.TabIndex = 0;
+            this.label43.Text = "Номер соглашения";
+            // 
+            // label44
+            // 
+            this.label44.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(4, 27);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(68, 25);
+            this.label44.TabIndex = 1;
+            this.label44.Text = "Дата соглашения";
+            // 
+            // label45
+            // 
+            this.label45.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(4, 53);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(75, 25);
+            this.label45.TabIndex = 2;
+            this.label45.Text = "ФИО нового заказчика";
+            // 
+            // label46
+            // 
+            this.label46.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(4, 79);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(89, 25);
+            this.label46.TabIndex = 3;
+            this.label46.Text = "Адрес проживания/Юр. адрес нового заказчика";
+            // 
+            // label47
+            // 
+            this.label47.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(4, 111);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(83, 13);
+            this.label47.TabIndex = 4;
+            this.label47.Text = "Телефон/факс";
+            // 
+            // label49
+            // 
+            this.label49.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(4, 131);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(75, 25);
+            this.label49.TabIndex = 6;
+            this.label49.Text = "Адрес электронной почты";
+            // 
+            // label50
+            // 
+            this.label50.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(4, 188);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(78, 39);
+            this.label50.TabIndex = 7;
+            this.label50.Text = "Количество экземпляров соглашения";
+            // 
+            // textBoxSOGL_ZAK_NUM
+            // 
+            this.textBoxSOGL_ZAK_NUM.Location = new System.Drawing.Point(101, 4);
+            this.textBoxSOGL_ZAK_NUM.Name = "textBoxSOGL_ZAK_NUM";
+            this.textBoxSOGL_ZAK_NUM.Size = new System.Drawing.Size(95, 20);
+            this.textBoxSOGL_ZAK_NUM.TabIndex = 8;
+            // 
+            // textBoxNEW_ZAK_FIO
+            // 
+            this.textBoxNEW_ZAK_FIO.Location = new System.Drawing.Point(101, 56);
+            this.textBoxNEW_ZAK_FIO.Name = "textBoxNEW_ZAK_FIO";
+            this.textBoxNEW_ZAK_FIO.Size = new System.Drawing.Size(95, 20);
+            this.textBoxNEW_ZAK_FIO.TabIndex = 9;
+            // 
+            // textBoxNEW_ZAK_ADRES
+            // 
+            this.textBoxNEW_ZAK_ADRES.Location = new System.Drawing.Point(101, 82);
+            this.textBoxNEW_ZAK_ADRES.Name = "textBoxNEW_ZAK_ADRES";
+            this.textBoxNEW_ZAK_ADRES.Size = new System.Drawing.Size(95, 20);
+            this.textBoxNEW_ZAK_ADRES.TabIndex = 10;
+            // 
+            // textBoxNEW_ZAK_PHONE
+            // 
+            this.textBoxNEW_ZAK_PHONE.Location = new System.Drawing.Point(101, 108);
+            this.textBoxNEW_ZAK_PHONE.Name = "textBoxNEW_ZAK_PHONE";
+            this.textBoxNEW_ZAK_PHONE.Size = new System.Drawing.Size(95, 20);
+            this.textBoxNEW_ZAK_PHONE.TabIndex = 11;
+            // 
+            // textBoxNEW_ZAK_EMAIL
+            // 
+            this.textBoxNEW_ZAK_EMAIL.Location = new System.Drawing.Point(101, 134);
+            this.textBoxNEW_ZAK_EMAIL.Name = "textBoxNEW_ZAK_EMAIL";
+            this.textBoxNEW_ZAK_EMAIL.Size = new System.Drawing.Size(95, 20);
+            this.textBoxNEW_ZAK_EMAIL.TabIndex = 12;
+            // 
+            // label48
+            // 
+            this.label48.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(4, 157);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(89, 25);
+            this.label48.TabIndex = 13;
+            this.label48.Text = "ИНН, паспортные данные/Банковские реквизиты";
+            // 
+            // textBoxNEW_INN_PASP_BANK
+            // 
+            this.textBoxNEW_INN_PASP_BANK.Location = new System.Drawing.Point(101, 160);
+            this.textBoxNEW_INN_PASP_BANK.Name = "textBoxNEW_INN_PASP_BANK";
+            this.textBoxNEW_INN_PASP_BANK.Size = new System.Drawing.Size(95, 20);
+            this.textBoxNEW_INN_PASP_BANK.TabIndex = 14;
+            // 
+            // textBoxNEW_ZAK_EKZ
+            // 
+            this.textBoxNEW_ZAK_EKZ.Location = new System.Drawing.Point(101, 186);
+            this.textBoxNEW_ZAK_EKZ.Name = "textBoxNEW_ZAK_EKZ";
+            this.textBoxNEW_ZAK_EKZ.Size = new System.Drawing.Size(95, 20);
+            this.textBoxNEW_ZAK_EKZ.TabIndex = 15;
+            // 
+            // dateTimePickerSOGL_ZAK_DATE
+            // 
+            this.dateTimePickerSOGL_ZAK_DATE.Location = new System.Drawing.Point(101, 30);
+            this.dateTimePickerSOGL_ZAK_DATE.Name = "dateTimePickerSOGL_ZAK_DATE";
+            this.dateTimePickerSOGL_ZAK_DATE.Size = new System.Drawing.Size(95, 20);
+            this.dateTimePickerSOGL_ZAK_DATE.TabIndex = 16;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1221,6 +1396,8 @@
             this.DogovorTable.PerformLayout();
             this.AktTable.ResumeLayout(false);
             this.AktTable.PerformLayout();
+            this.PeremZakTable.ResumeLayout(false);
+            this.PeremZakTable.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1297,7 +1474,6 @@
         private System.Windows.Forms.TableLayoutPanel IzmCedTable;
         private System.Windows.Forms.TableLayoutPanel SmenaFamiliiTable;
         private System.Windows.Forms.TableLayoutPanel IzmStoimTable;
-        private System.Windows.Forms.TableLayoutPanel PeremZakTable;
         private System.Windows.Forms.TableLayoutPanel DopSoglTable;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
@@ -1329,6 +1505,23 @@
         private System.Windows.Forms.TextBox textBoxSTUD_PASP_NOM;
         private System.Windows.Forms.TextBox textBoxSTUD_PASP_VID;
         private System.Windows.Forms.DateTimePicker dateTimePickerSTUDENT_BD;
+        private System.Windows.Forms.TableLayoutPanel PeremZakTable;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.TextBox textBoxSOGL_ZAK_NUM;
+        private System.Windows.Forms.TextBox textBoxNEW_ZAK_FIO;
+        private System.Windows.Forms.TextBox textBoxNEW_ZAK_ADRES;
+        private System.Windows.Forms.TextBox textBoxNEW_ZAK_PHONE;
+        private System.Windows.Forms.TextBox textBoxNEW_ZAK_EMAIL;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.TextBox textBoxNEW_INN_PASP_BANK;
+        private System.Windows.Forms.TextBox textBoxNEW_ZAK_EKZ;
+        private System.Windows.Forms.DateTimePicker dateTimePickerSOGL_ZAK_DATE;
     }
 }
 
