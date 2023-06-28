@@ -89,6 +89,23 @@
             this.button2 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.PeremZakTable = new System.Windows.Forms.TableLayoutPanel();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.textBoxSOGL_ZAK_NUM = new System.Windows.Forms.TextBox();
+            this.textBoxNEW_ZAK_FIO = new System.Windows.Forms.TextBox();
+            this.textBoxNEW_ZAK_ADRES = new System.Windows.Forms.TextBox();
+            this.textBoxNEW_ZAK_PHONE = new System.Windows.Forms.TextBox();
+            this.textBoxNEW_ZAK_EMAIL = new System.Windows.Forms.TextBox();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.textBoxNEW_INN_PASP_BANK = new System.Windows.Forms.TextBox();
+            this.textBoxNEW_ZAK_EKZ = new System.Windows.Forms.TextBox();
+            this.dateTimePickerSOGL_ZAK_DATE = new System.Windows.Forms.DateTimePicker();
             this.DogovorTable = new System.Windows.Forms.TableLayoutPanel();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
@@ -128,30 +145,24 @@
             this.dateTimePickerAKT_DATE = new System.Windows.Forms.DateTimePicker();
             this.textBoxAKT_NUM = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.PeremZakTable = new System.Windows.Forms.TableLayoutPanel();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.textBoxSOGL_ZAK_NUM = new System.Windows.Forms.TextBox();
-            this.textBoxNEW_ZAK_FIO = new System.Windows.Forms.TextBox();
-            this.textBoxNEW_ZAK_ADRES = new System.Windows.Forms.TextBox();
-            this.textBoxNEW_ZAK_PHONE = new System.Windows.Forms.TextBox();
-            this.textBoxNEW_ZAK_EMAIL = new System.Windows.Forms.TextBox();
-            this.label48 = new System.Windows.Forms.Label();
-            this.textBoxNEW_INN_PASP_BANK = new System.Windows.Forms.TextBox();
-            this.textBoxNEW_ZAK_EKZ = new System.Windows.Forms.TextBox();
-            this.dateTimePickerSOGL_ZAK_DATE = new System.Windows.Forms.DateTimePicker();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.dateTimePickerFAM_SOGL_DATE = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerZAV_DATE = new System.Windows.Forms.DateTimePicker();
+            this.textBoxFAM_SOGL_NUM = new System.Windows.Forms.TextBox();
+            this.textBoxNEW_FAM_FIO = new System.Windows.Forms.TextBox();
+            this.textBoxFAM_EKZ = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.DogovorTable.SuspendLayout();
-            this.AktTable.SuspendLayout();
             this.PeremZakTable.SuspendLayout();
+            this.DogovorTable.SuspendLayout();
+            this.SmenaFamiliiTable.SuspendLayout();
+            this.AktTable.SuspendLayout();
             this.SuspendLayout();
             // 
             // checkBox1
@@ -318,6 +329,7 @@
             // 
             // dateTimePickerDOG_DATE
             // 
+            this.dateTimePickerDOG_DATE.Dock = System.Windows.Forms.DockStyle.Top;
             this.dateTimePickerDOG_DATE.Location = new System.Drawing.Point(253, 30);
             this.dateTimePickerDOG_DATE.Name = "dateTimePickerDOG_DATE";
             this.dateTimePickerDOG_DATE.Size = new System.Drawing.Size(186, 20);
@@ -325,6 +337,7 @@
             // 
             // dateTimePickerSGA_DATE
             // 
+            this.dateTimePickerSGA_DATE.Dock = System.Windows.Forms.DockStyle.Top;
             this.dateTimePickerSGA_DATE.Location = new System.Drawing.Point(253, 82);
             this.dateTimePickerSGA_DATE.Name = "dateTimePickerSGA_DATE";
             this.dateTimePickerSGA_DATE.Size = new System.Drawing.Size(186, 20);
@@ -332,6 +345,7 @@
             // 
             // dateTimePickerSGA_UNTIL
             // 
+            this.dateTimePickerSGA_UNTIL.Dock = System.Windows.Forms.DockStyle.Top;
             this.dateTimePickerSGA_UNTIL.Location = new System.Drawing.Point(253, 108);
             this.dateTimePickerSGA_UNTIL.Name = "dateTimePickerSGA_UNTIL";
             this.dateTimePickerSGA_UNTIL.Size = new System.Drawing.Size(186, 20);
@@ -339,6 +353,7 @@
             // 
             // dateTimePickerDOV_DATE
             // 
+            this.dateTimePickerDOV_DATE.Dock = System.Windows.Forms.DockStyle.Top;
             this.dateTimePickerDOV_DATE.Location = new System.Drawing.Point(253, 134);
             this.dateTimePickerDOV_DATE.Name = "dateTimePickerDOV_DATE";
             this.dateTimePickerDOV_DATE.Size = new System.Drawing.Size(186, 20);
@@ -346,51 +361,58 @@
             // 
             // textBoxDOG_NUM
             // 
+            this.textBoxDOG_NUM.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBoxDOG_NUM.Location = new System.Drawing.Point(253, 4);
             this.textBoxDOG_NUM.Name = "textBoxDOG_NUM";
-            this.textBoxDOG_NUM.Size = new System.Drawing.Size(100, 20);
+            this.textBoxDOG_NUM.Size = new System.Drawing.Size(186, 20);
             this.textBoxDOG_NUM.TabIndex = 15;
             // 
             // textBoxSGA_NUM
             // 
+            this.textBoxSGA_NUM.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBoxSGA_NUM.Location = new System.Drawing.Point(253, 56);
             this.textBoxSGA_NUM.Name = "textBoxSGA_NUM";
-            this.textBoxSGA_NUM.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSGA_NUM.Size = new System.Drawing.Size(186, 20);
             this.textBoxSGA_NUM.TabIndex = 16;
             // 
             // textBoxDOV_NUM
             // 
+            this.textBoxDOV_NUM.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBoxDOV_NUM.Location = new System.Drawing.Point(253, 160);
             this.textBoxDOV_NUM.Name = "textBoxDOV_NUM";
-            this.textBoxDOV_NUM.Size = new System.Drawing.Size(100, 20);
+            this.textBoxDOV_NUM.Size = new System.Drawing.Size(186, 20);
             this.textBoxDOV_NUM.TabIndex = 17;
             // 
             // textBoxSTUDENT_FIO
             // 
+            this.textBoxSTUDENT_FIO.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBoxSTUDENT_FIO.Location = new System.Drawing.Point(253, 186);
             this.textBoxSTUDENT_FIO.Name = "textBoxSTUDENT_FIO";
-            this.textBoxSTUDENT_FIO.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSTUDENT_FIO.Size = new System.Drawing.Size(186, 20);
             this.textBoxSTUDENT_FIO.TabIndex = 18;
             // 
             // textBoxSTUDENT_ADRES
             // 
+            this.textBoxSTUDENT_ADRES.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBoxSTUDENT_ADRES.Location = new System.Drawing.Point(253, 212);
             this.textBoxSTUDENT_ADRES.Name = "textBoxSTUDENT_ADRES";
-            this.textBoxSTUDENT_ADRES.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSTUDENT_ADRES.Size = new System.Drawing.Size(186, 20);
             this.textBoxSTUDENT_ADRES.TabIndex = 19;
             // 
             // textBoxSTUDENT_PHONE
             // 
+            this.textBoxSTUDENT_PHONE.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBoxSTUDENT_PHONE.Location = new System.Drawing.Point(253, 238);
             this.textBoxSTUDENT_PHONE.Name = "textBoxSTUDENT_PHONE";
-            this.textBoxSTUDENT_PHONE.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSTUDENT_PHONE.Size = new System.Drawing.Size(186, 20);
             this.textBoxSTUDENT_PHONE.TabIndex = 20;
             // 
             // textBoxSTUDENT_EMAIL
             // 
+            this.textBoxSTUDENT_EMAIL.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBoxSTUDENT_EMAIL.Location = new System.Drawing.Point(253, 264);
             this.textBoxSTUDENT_EMAIL.Name = "textBoxSTUDENT_EMAIL";
-            this.textBoxSTUDENT_EMAIL.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSTUDENT_EMAIL.Size = new System.Drawing.Size(186, 20);
             this.textBoxSTUDENT_EMAIL.TabIndex = 21;
             // 
             // tableLayoutPanel2
@@ -511,58 +533,66 @@
             // 
             // textBoxZAK_FIO
             // 
+            this.textBoxZAK_FIO.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBoxZAK_FIO.Location = new System.Drawing.Point(251, 4);
             this.textBoxZAK_FIO.Name = "textBoxZAK_FIO";
-            this.textBoxZAK_FIO.Size = new System.Drawing.Size(100, 20);
+            this.textBoxZAK_FIO.Size = new System.Drawing.Size(188, 20);
             this.textBoxZAK_FIO.TabIndex = 8;
             // 
             // textBoxZAK_ADRES
             // 
+            this.textBoxZAK_ADRES.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBoxZAK_ADRES.Location = new System.Drawing.Point(251, 30);
             this.textBoxZAK_ADRES.Name = "textBoxZAK_ADRES";
-            this.textBoxZAK_ADRES.Size = new System.Drawing.Size(100, 20);
+            this.textBoxZAK_ADRES.Size = new System.Drawing.Size(188, 20);
             this.textBoxZAK_ADRES.TabIndex = 9;
             // 
             // textBoxZAK_INN
             // 
+            this.textBoxZAK_INN.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBoxZAK_INN.Location = new System.Drawing.Point(251, 56);
             this.textBoxZAK_INN.Name = "textBoxZAK_INN";
-            this.textBoxZAK_INN.Size = new System.Drawing.Size(100, 20);
+            this.textBoxZAK_INN.Size = new System.Drawing.Size(188, 20);
             this.textBoxZAK_INN.TabIndex = 10;
             // 
             // textBoxZAK_PASP_SER
             // 
+            this.textBoxZAK_PASP_SER.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBoxZAK_PASP_SER.Location = new System.Drawing.Point(251, 82);
             this.textBoxZAK_PASP_SER.Name = "textBoxZAK_PASP_SER";
-            this.textBoxZAK_PASP_SER.Size = new System.Drawing.Size(100, 20);
+            this.textBoxZAK_PASP_SER.Size = new System.Drawing.Size(188, 20);
             this.textBoxZAK_PASP_SER.TabIndex = 11;
             // 
             // textBoxZAK_PASP_NOM
             // 
+            this.textBoxZAK_PASP_NOM.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBoxZAK_PASP_NOM.Location = new System.Drawing.Point(251, 108);
             this.textBoxZAK_PASP_NOM.Name = "textBoxZAK_PASP_NOM";
-            this.textBoxZAK_PASP_NOM.Size = new System.Drawing.Size(100, 20);
+            this.textBoxZAK_PASP_NOM.Size = new System.Drawing.Size(188, 20);
             this.textBoxZAK_PASP_NOM.TabIndex = 12;
             // 
             // textBoxZAK_PASP_VID
             // 
+            this.textBoxZAK_PASP_VID.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBoxZAK_PASP_VID.Location = new System.Drawing.Point(251, 134);
             this.textBoxZAK_PASP_VID.Name = "textBoxZAK_PASP_VID";
-            this.textBoxZAK_PASP_VID.Size = new System.Drawing.Size(100, 20);
+            this.textBoxZAK_PASP_VID.Size = new System.Drawing.Size(188, 20);
             this.textBoxZAK_PASP_VID.TabIndex = 13;
             // 
             // textBoxZAK_PHONE
             // 
+            this.textBoxZAK_PHONE.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBoxZAK_PHONE.Location = new System.Drawing.Point(251, 160);
             this.textBoxZAK_PHONE.Name = "textBoxZAK_PHONE";
-            this.textBoxZAK_PHONE.Size = new System.Drawing.Size(100, 20);
+            this.textBoxZAK_PHONE.Size = new System.Drawing.Size(188, 20);
             this.textBoxZAK_PHONE.TabIndex = 14;
             // 
             // textBoxZAK_EMAIL
             // 
+            this.textBoxZAK_EMAIL.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBoxZAK_EMAIL.Location = new System.Drawing.Point(251, 186);
             this.textBoxZAK_EMAIL.Name = "textBoxZAK_EMAIL";
-            this.textBoxZAK_EMAIL.Size = new System.Drawing.Size(100, 20);
+            this.textBoxZAK_EMAIL.Size = new System.Drawing.Size(188, 20);
             this.textBoxZAK_EMAIL.TabIndex = 15;
             // 
             // tableLayoutPanel3
@@ -587,7 +617,7 @@
             this.tableLayoutPanel3.Controls.Add(this.textBoxYUR_BANK, 1, 5);
             this.tableLayoutPanel3.Controls.Add(this.textBoxYUR_ZAK_PHONE, 1, 6);
             this.tableLayoutPanel3.Controls.Add(this.textBoxYUR_ZAK_EMAIL, 1, 7);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(12, 329);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(13, 329);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 8;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
@@ -683,58 +713,66 @@
             // 
             // textBoxYUR_ZAK_FIO
             // 
+            this.textBoxYUR_ZAK_FIO.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBoxYUR_ZAK_FIO.Location = new System.Drawing.Point(251, 4);
             this.textBoxYUR_ZAK_FIO.Name = "textBoxYUR_ZAK_FIO";
-            this.textBoxYUR_ZAK_FIO.Size = new System.Drawing.Size(100, 20);
+            this.textBoxYUR_ZAK_FIO.Size = new System.Drawing.Size(188, 20);
             this.textBoxYUR_ZAK_FIO.TabIndex = 8;
             // 
             // textBoxYUR_ORG
             // 
+            this.textBoxYUR_ORG.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBoxYUR_ORG.Location = new System.Drawing.Point(251, 30);
             this.textBoxYUR_ORG.Name = "textBoxYUR_ORG";
-            this.textBoxYUR_ORG.Size = new System.Drawing.Size(100, 20);
+            this.textBoxYUR_ORG.Size = new System.Drawing.Size(188, 20);
             this.textBoxYUR_ORG.TabIndex = 9;
             // 
             // textBoxYUR_DOC
             // 
+            this.textBoxYUR_DOC.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBoxYUR_DOC.Location = new System.Drawing.Point(251, 56);
             this.textBoxYUR_DOC.Name = "textBoxYUR_DOC";
-            this.textBoxYUR_DOC.Size = new System.Drawing.Size(100, 20);
+            this.textBoxYUR_DOC.Size = new System.Drawing.Size(188, 20);
             this.textBoxYUR_DOC.TabIndex = 10;
             // 
             // textBoxYUR_ADRES
             // 
+            this.textBoxYUR_ADRES.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBoxYUR_ADRES.Location = new System.Drawing.Point(251, 82);
             this.textBoxYUR_ADRES.Name = "textBoxYUR_ADRES";
-            this.textBoxYUR_ADRES.Size = new System.Drawing.Size(100, 20);
+            this.textBoxYUR_ADRES.Size = new System.Drawing.Size(188, 20);
             this.textBoxYUR_ADRES.TabIndex = 11;
             // 
             // textBoxYUR_PHONE
             // 
+            this.textBoxYUR_PHONE.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBoxYUR_PHONE.Location = new System.Drawing.Point(251, 108);
             this.textBoxYUR_PHONE.Name = "textBoxYUR_PHONE";
-            this.textBoxYUR_PHONE.Size = new System.Drawing.Size(100, 20);
+            this.textBoxYUR_PHONE.Size = new System.Drawing.Size(188, 20);
             this.textBoxYUR_PHONE.TabIndex = 12;
             // 
             // textBoxYUR_BANK
             // 
+            this.textBoxYUR_BANK.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBoxYUR_BANK.Location = new System.Drawing.Point(251, 134);
             this.textBoxYUR_BANK.Name = "textBoxYUR_BANK";
-            this.textBoxYUR_BANK.Size = new System.Drawing.Size(100, 20);
+            this.textBoxYUR_BANK.Size = new System.Drawing.Size(188, 20);
             this.textBoxYUR_BANK.TabIndex = 13;
             // 
             // textBoxYUR_ZAK_PHONE
             // 
+            this.textBoxYUR_ZAK_PHONE.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBoxYUR_ZAK_PHONE.Location = new System.Drawing.Point(251, 160);
             this.textBoxYUR_ZAK_PHONE.Name = "textBoxYUR_ZAK_PHONE";
-            this.textBoxYUR_ZAK_PHONE.Size = new System.Drawing.Size(100, 20);
+            this.textBoxYUR_ZAK_PHONE.Size = new System.Drawing.Size(188, 20);
             this.textBoxYUR_ZAK_PHONE.TabIndex = 14;
             // 
             // textBoxYUR_ZAK_EMAIL
             // 
+            this.textBoxYUR_ZAK_EMAIL.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBoxYUR_ZAK_EMAIL.Location = new System.Drawing.Point(251, 186);
             this.textBoxYUR_ZAK_EMAIL.Name = "textBoxYUR_ZAK_EMAIL";
-            this.textBoxYUR_ZAK_EMAIL.Size = new System.Drawing.Size(100, 20);
+            this.textBoxYUR_ZAK_EMAIL.Size = new System.Drawing.Size(188, 20);
             this.textBoxYUR_ZAK_EMAIL.TabIndex = 15;
             // 
             // button2
@@ -782,6 +820,186 @@
             this.panel1.Size = new System.Drawing.Size(910, 528);
             this.panel1.TabIndex = 7;
             // 
+            // PeremZakTable
+            // 
+            this.PeremZakTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.PeremZakTable.ColumnCount = 2;
+            this.PeremZakTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49F));
+            this.PeremZakTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51F));
+            this.PeremZakTable.Controls.Add(this.label43, 0, 0);
+            this.PeremZakTable.Controls.Add(this.label44, 0, 1);
+            this.PeremZakTable.Controls.Add(this.label45, 0, 2);
+            this.PeremZakTable.Controls.Add(this.label46, 0, 3);
+            this.PeremZakTable.Controls.Add(this.label47, 0, 4);
+            this.PeremZakTable.Controls.Add(this.label50, 0, 7);
+            this.PeremZakTable.Controls.Add(this.textBoxSOGL_ZAK_NUM, 1, 0);
+            this.PeremZakTable.Controls.Add(this.textBoxNEW_ZAK_FIO, 1, 2);
+            this.PeremZakTable.Controls.Add(this.textBoxNEW_ZAK_ADRES, 1, 3);
+            this.PeremZakTable.Controls.Add(this.textBoxNEW_ZAK_PHONE, 1, 4);
+            this.PeremZakTable.Controls.Add(this.textBoxNEW_ZAK_EMAIL, 1, 5);
+            this.PeremZakTable.Controls.Add(this.label49, 0, 5);
+            this.PeremZakTable.Controls.Add(this.label48, 0, 6);
+            this.PeremZakTable.Controls.Add(this.textBoxNEW_INN_PASP_BANK, 1, 6);
+            this.PeremZakTable.Controls.Add(this.textBoxNEW_ZAK_EKZ, 1, 7);
+            this.PeremZakTable.Controls.Add(this.dateTimePickerSOGL_ZAK_DATE, 1, 1);
+            this.PeremZakTable.Location = new System.Drawing.Point(3, 3);
+            this.PeremZakTable.Name = "PeremZakTable";
+            this.PeremZakTable.RowCount = 8;
+            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.PeremZakTable.Size = new System.Drawing.Size(420, 234);
+            this.PeremZakTable.TabIndex = 9;
+            // 
+            // label43
+            // 
+            this.label43.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(4, 7);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(105, 13);
+            this.label43.TabIndex = 0;
+            this.label43.Text = "Номер соглашения";
+            // 
+            // label44
+            // 
+            this.label44.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(4, 33);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(97, 13);
+            this.label44.TabIndex = 1;
+            this.label44.Text = "Дата соглашения";
+            // 
+            // label45
+            // 
+            this.label45.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(4, 59);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(128, 13);
+            this.label45.TabIndex = 2;
+            this.label45.Text = "ФИО нового заказчика";
+            // 
+            // label46
+            // 
+            this.label46.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(4, 79);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(197, 25);
+            this.label46.TabIndex = 3;
+            this.label46.Text = "Адрес проживания/Юр. адрес нового заказчика";
+            // 
+            // label47
+            // 
+            this.label47.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(4, 111);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(83, 13);
+            this.label47.TabIndex = 4;
+            this.label47.Text = "Телефон/факс";
+            // 
+            // label50
+            // 
+            this.label50.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(4, 195);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(140, 26);
+            this.label50.TabIndex = 7;
+            this.label50.Text = "Количество экземпляров соглашения";
+            // 
+            // textBoxSOGL_ZAK_NUM
+            // 
+            this.textBoxSOGL_ZAK_NUM.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxSOGL_ZAK_NUM.Location = new System.Drawing.Point(209, 4);
+            this.textBoxSOGL_ZAK_NUM.Name = "textBoxSOGL_ZAK_NUM";
+            this.textBoxSOGL_ZAK_NUM.Size = new System.Drawing.Size(207, 20);
+            this.textBoxSOGL_ZAK_NUM.TabIndex = 8;
+            // 
+            // textBoxNEW_ZAK_FIO
+            // 
+            this.textBoxNEW_ZAK_FIO.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxNEW_ZAK_FIO.Location = new System.Drawing.Point(209, 56);
+            this.textBoxNEW_ZAK_FIO.Name = "textBoxNEW_ZAK_FIO";
+            this.textBoxNEW_ZAK_FIO.Size = new System.Drawing.Size(207, 20);
+            this.textBoxNEW_ZAK_FIO.TabIndex = 9;
+            // 
+            // textBoxNEW_ZAK_ADRES
+            // 
+            this.textBoxNEW_ZAK_ADRES.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxNEW_ZAK_ADRES.Location = new System.Drawing.Point(209, 82);
+            this.textBoxNEW_ZAK_ADRES.Name = "textBoxNEW_ZAK_ADRES";
+            this.textBoxNEW_ZAK_ADRES.Size = new System.Drawing.Size(207, 20);
+            this.textBoxNEW_ZAK_ADRES.TabIndex = 10;
+            // 
+            // textBoxNEW_ZAK_PHONE
+            // 
+            this.textBoxNEW_ZAK_PHONE.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxNEW_ZAK_PHONE.Location = new System.Drawing.Point(209, 108);
+            this.textBoxNEW_ZAK_PHONE.Name = "textBoxNEW_ZAK_PHONE";
+            this.textBoxNEW_ZAK_PHONE.Size = new System.Drawing.Size(207, 20);
+            this.textBoxNEW_ZAK_PHONE.TabIndex = 11;
+            // 
+            // textBoxNEW_ZAK_EMAIL
+            // 
+            this.textBoxNEW_ZAK_EMAIL.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxNEW_ZAK_EMAIL.Location = new System.Drawing.Point(209, 134);
+            this.textBoxNEW_ZAK_EMAIL.Name = "textBoxNEW_ZAK_EMAIL";
+            this.textBoxNEW_ZAK_EMAIL.Size = new System.Drawing.Size(207, 20);
+            this.textBoxNEW_ZAK_EMAIL.TabIndex = 12;
+            // 
+            // label49
+            // 
+            this.label49.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(4, 137);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(139, 13);
+            this.label49.TabIndex = 6;
+            this.label49.Text = "Адрес электронной почты";
+            // 
+            // label48
+            // 
+            this.label48.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(4, 157);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(169, 25);
+            this.label48.TabIndex = 13;
+            this.label48.Text = "ИНН, паспортные данные/Банковские реквизиты";
+            // 
+            // textBoxNEW_INN_PASP_BANK
+            // 
+            this.textBoxNEW_INN_PASP_BANK.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxNEW_INN_PASP_BANK.Location = new System.Drawing.Point(209, 160);
+            this.textBoxNEW_INN_PASP_BANK.Name = "textBoxNEW_INN_PASP_BANK";
+            this.textBoxNEW_INN_PASP_BANK.Size = new System.Drawing.Size(207, 20);
+            this.textBoxNEW_INN_PASP_BANK.TabIndex = 14;
+            // 
+            // textBoxNEW_ZAK_EKZ
+            // 
+            this.textBoxNEW_ZAK_EKZ.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxNEW_ZAK_EKZ.Location = new System.Drawing.Point(209, 186);
+            this.textBoxNEW_ZAK_EKZ.Name = "textBoxNEW_ZAK_EKZ";
+            this.textBoxNEW_ZAK_EKZ.Size = new System.Drawing.Size(207, 20);
+            this.textBoxNEW_ZAK_EKZ.TabIndex = 15;
+            // 
+            // dateTimePickerSOGL_ZAK_DATE
+            // 
+            this.dateTimePickerSOGL_ZAK_DATE.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dateTimePickerSOGL_ZAK_DATE.Location = new System.Drawing.Point(209, 30);
+            this.dateTimePickerSOGL_ZAK_DATE.Name = "dateTimePickerSOGL_ZAK_DATE";
+            this.dateTimePickerSOGL_ZAK_DATE.Size = new System.Drawing.Size(207, 20);
+            this.dateTimePickerSOGL_ZAK_DATE.TabIndex = 16;
+            // 
             // DogovorTable
             // 
             this.DogovorTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
@@ -814,7 +1032,7 @@
             this.DogovorTable.Controls.Add(this.textBoxSTUD_PASP_NOM, 1, 11);
             this.DogovorTable.Controls.Add(this.textBoxSTUD_PASP_VID, 1, 12);
             this.DogovorTable.Controls.Add(this.dateTimePickerSTUDENT_BD, 1, 9);
-            this.DogovorTable.Location = new System.Drawing.Point(21, 80);
+            this.DogovorTable.Location = new System.Drawing.Point(3, 3);
             this.DogovorTable.Name = "DogovorTable";
             this.DogovorTable.RowCount = 13;
             this.DogovorTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
@@ -830,16 +1048,16 @@
             this.DogovorTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.DogovorTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.DogovorTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.DogovorTable.Size = new System.Drawing.Size(384, 337);
+            this.DogovorTable.Size = new System.Drawing.Size(420, 337);
             this.DogovorTable.TabIndex = 8;
             // 
             // label30
             // 
             this.label30.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(4, 1);
+            this.label30.Location = new System.Drawing.Point(4, 7);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(184, 25);
+            this.label30.Size = new System.Drawing.Size(242, 13);
             this.label30.TabIndex = 0;
             this.label30.Text = "Код и наименование направления подготовки";
             // 
@@ -849,7 +1067,7 @@
             this.label31.AutoSize = true;
             this.label31.Location = new System.Drawing.Point(4, 27);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(161, 25);
+            this.label31.Size = new System.Drawing.Size(240, 25);
             this.label31.TabIndex = 1;
             this.label31.Text = "Направленность (профиль) образовательной программы ";
             // 
@@ -965,93 +1183,106 @@
             // 
             // textBoxNAPR
             // 
-            this.textBoxNAPR.Location = new System.Drawing.Point(239, 4);
+            this.textBoxNAPR.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxNAPR.Location = new System.Drawing.Point(261, 4);
             this.textBoxNAPR.Name = "textBoxNAPR";
-            this.textBoxNAPR.Size = new System.Drawing.Size(100, 20);
+            this.textBoxNAPR.Size = new System.Drawing.Size(155, 20);
             this.textBoxNAPR.TabIndex = 13;
             // 
             // textBoxPROFIL
             // 
-            this.textBoxPROFIL.Location = new System.Drawing.Point(239, 30);
+            this.textBoxPROFIL.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxPROFIL.Location = new System.Drawing.Point(261, 30);
             this.textBoxPROFIL.Name = "textBoxPROFIL";
-            this.textBoxPROFIL.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPROFIL.Size = new System.Drawing.Size(155, 20);
             this.textBoxPROFIL.TabIndex = 14;
             // 
             // textBoxLEVEL
             // 
-            this.textBoxLEVEL.Location = new System.Drawing.Point(239, 56);
+            this.textBoxLEVEL.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxLEVEL.Location = new System.Drawing.Point(261, 56);
             this.textBoxLEVEL.Name = "textBoxLEVEL";
-            this.textBoxLEVEL.Size = new System.Drawing.Size(100, 20);
+            this.textBoxLEVEL.Size = new System.Drawing.Size(155, 20);
             this.textBoxLEVEL.TabIndex = 15;
             // 
             // textBoxFORM
             // 
-            this.textBoxFORM.Location = new System.Drawing.Point(239, 82);
+            this.textBoxFORM.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxFORM.Location = new System.Drawing.Point(261, 82);
             this.textBoxFORM.Name = "textBoxFORM";
-            this.textBoxFORM.Size = new System.Drawing.Size(100, 20);
+            this.textBoxFORM.Size = new System.Drawing.Size(155, 20);
             this.textBoxFORM.TabIndex = 16;
             // 
             // textBoxSROK
             // 
-            this.textBoxSROK.Location = new System.Drawing.Point(239, 108);
+            this.textBoxSROK.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxSROK.Location = new System.Drawing.Point(261, 108);
             this.textBoxSROK.Name = "textBoxSROK";
-            this.textBoxSROK.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSROK.Size = new System.Drawing.Size(155, 20);
             this.textBoxSROK.TabIndex = 17;
             // 
             // textBoxKURS
             // 
-            this.textBoxKURS.Location = new System.Drawing.Point(239, 134);
+            this.textBoxKURS.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxKURS.Location = new System.Drawing.Point(261, 134);
             this.textBoxKURS.Name = "textBoxKURS";
-            this.textBoxKURS.Size = new System.Drawing.Size(100, 20);
+            this.textBoxKURS.Size = new System.Drawing.Size(155, 20);
             this.textBoxKURS.TabIndex = 18;
             // 
             // textBoxYEARS
             // 
-            this.textBoxYEARS.Location = new System.Drawing.Point(239, 160);
+            this.textBoxYEARS.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxYEARS.Location = new System.Drawing.Point(261, 160);
             this.textBoxYEARS.Name = "textBoxYEARS";
-            this.textBoxYEARS.Size = new System.Drawing.Size(100, 20);
+            this.textBoxYEARS.Size = new System.Drawing.Size(155, 20);
             this.textBoxYEARS.TabIndex = 19;
             // 
             // textBoxFULL_PRICE
             // 
-            this.textBoxFULL_PRICE.Location = new System.Drawing.Point(239, 186);
+            this.textBoxFULL_PRICE.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxFULL_PRICE.Location = new System.Drawing.Point(261, 186);
             this.textBoxFULL_PRICE.Name = "textBoxFULL_PRICE";
-            this.textBoxFULL_PRICE.Size = new System.Drawing.Size(100, 20);
+            this.textBoxFULL_PRICE.Size = new System.Drawing.Size(155, 20);
             this.textBoxFULL_PRICE.TabIndex = 20;
             // 
             // textBoxYEARS_PRICE
             // 
-            this.textBoxYEARS_PRICE.Location = new System.Drawing.Point(239, 212);
+            this.textBoxYEARS_PRICE.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxYEARS_PRICE.Location = new System.Drawing.Point(261, 212);
             this.textBoxYEARS_PRICE.Name = "textBoxYEARS_PRICE";
-            this.textBoxYEARS_PRICE.Size = new System.Drawing.Size(100, 20);
+            this.textBoxYEARS_PRICE.Size = new System.Drawing.Size(155, 20);
             this.textBoxYEARS_PRICE.TabIndex = 21;
             // 
             // textBoxSTUD_PASP_SER
             // 
-            this.textBoxSTUD_PASP_SER.Location = new System.Drawing.Point(239, 264);
+            this.textBoxSTUD_PASP_SER.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxSTUD_PASP_SER.Location = new System.Drawing.Point(261, 264);
             this.textBoxSTUD_PASP_SER.Name = "textBoxSTUD_PASP_SER";
-            this.textBoxSTUD_PASP_SER.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSTUD_PASP_SER.Size = new System.Drawing.Size(155, 20);
             this.textBoxSTUD_PASP_SER.TabIndex = 22;
             // 
             // textBoxSTUD_PASP_NOM
             // 
-            this.textBoxSTUD_PASP_NOM.Location = new System.Drawing.Point(239, 290);
+            this.textBoxSTUD_PASP_NOM.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxSTUD_PASP_NOM.Location = new System.Drawing.Point(261, 290);
             this.textBoxSTUD_PASP_NOM.Name = "textBoxSTUD_PASP_NOM";
-            this.textBoxSTUD_PASP_NOM.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSTUD_PASP_NOM.Size = new System.Drawing.Size(155, 20);
             this.textBoxSTUD_PASP_NOM.TabIndex = 23;
             // 
             // textBoxSTUD_PASP_VID
             // 
-            this.textBoxSTUD_PASP_VID.Location = new System.Drawing.Point(239, 316);
+            this.textBoxSTUD_PASP_VID.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxSTUD_PASP_VID.Location = new System.Drawing.Point(261, 316);
             this.textBoxSTUD_PASP_VID.Name = "textBoxSTUD_PASP_VID";
-            this.textBoxSTUD_PASP_VID.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSTUD_PASP_VID.Size = new System.Drawing.Size(155, 20);
             this.textBoxSTUD_PASP_VID.TabIndex = 24;
             // 
             // dateTimePickerSTUDENT_BD
             // 
-            this.dateTimePickerSTUDENT_BD.Location = new System.Drawing.Point(239, 238);
+            this.dateTimePickerSTUDENT_BD.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dateTimePickerSTUDENT_BD.Location = new System.Drawing.Point(261, 238);
             this.dateTimePickerSTUDENT_BD.Name = "dateTimePickerSTUDENT_BD";
-            this.dateTimePickerSTUDENT_BD.Size = new System.Drawing.Size(141, 20);
+            this.dateTimePickerSTUDENT_BD.Size = new System.Drawing.Size(155, 20);
             this.dateTimePickerSTUDENT_BD.TabIndex = 25;
             // 
             // MatKapitalTable
@@ -1060,7 +1291,7 @@
             this.MatKapitalTable.ColumnCount = 2;
             this.MatKapitalTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.MatKapitalTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.MatKapitalTable.Location = new System.Drawing.Point(284, 452);
+            this.MatKapitalTable.Location = new System.Drawing.Point(205, 426);
             this.MatKapitalTable.Name = "MatKapitalTable";
             this.MatKapitalTable.RowCount = 2;
             this.MatKapitalTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -1102,12 +1333,25 @@
             this.SmenaFamiliiTable.ColumnCount = 2;
             this.SmenaFamiliiTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.SmenaFamiliiTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.SmenaFamiliiTable.Location = new System.Drawing.Point(511, 449);
+            this.SmenaFamiliiTable.Controls.Add(this.label51, 0, 0);
+            this.SmenaFamiliiTable.Controls.Add(this.label52, 0, 1);
+            this.SmenaFamiliiTable.Controls.Add(this.label53, 0, 2);
+            this.SmenaFamiliiTable.Controls.Add(this.label54, 0, 3);
+            this.SmenaFamiliiTable.Controls.Add(this.label55, 0, 4);
+            this.SmenaFamiliiTable.Controls.Add(this.dateTimePickerFAM_SOGL_DATE, 1, 0);
+            this.SmenaFamiliiTable.Controls.Add(this.dateTimePickerZAV_DATE, 1, 2);
+            this.SmenaFamiliiTable.Controls.Add(this.textBoxFAM_SOGL_NUM, 1, 1);
+            this.SmenaFamiliiTable.Controls.Add(this.textBoxNEW_FAM_FIO, 1, 3);
+            this.SmenaFamiliiTable.Controls.Add(this.textBoxFAM_EKZ, 1, 4);
+            this.SmenaFamiliiTable.Location = new System.Drawing.Point(3, 3);
             this.SmenaFamiliiTable.Name = "SmenaFamiliiTable";
-            this.SmenaFamiliiTable.RowCount = 2;
-            this.SmenaFamiliiTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.SmenaFamiliiTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.SmenaFamiliiTable.Size = new System.Drawing.Size(200, 100);
+            this.SmenaFamiliiTable.RowCount = 5;
+            this.SmenaFamiliiTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.SmenaFamiliiTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.SmenaFamiliiTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.SmenaFamiliiTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.SmenaFamiliiTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.SmenaFamiliiTable.Size = new System.Drawing.Size(420, 134);
             this.SmenaFamiliiTable.TabIndex = 4;
             // 
             // IzmStoimTable
@@ -1153,7 +1397,7 @@
             this.AktTable.RowCount = 2;
             this.AktTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.AktTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.AktTable.Size = new System.Drawing.Size(308, 59);
+            this.AktTable.Size = new System.Drawing.Size(420, 59);
             this.AktTable.TabIndex = 0;
             // 
             // label28
@@ -1176,16 +1420,18 @@
             // 
             // dateTimePickerAKT_DATE
             // 
-            this.dateTimePickerAKT_DATE.Location = new System.Drawing.Point(157, 4);
+            this.dateTimePickerAKT_DATE.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dateTimePickerAKT_DATE.Location = new System.Drawing.Point(213, 4);
             this.dateTimePickerAKT_DATE.Name = "dateTimePickerAKT_DATE";
-            this.dateTimePickerAKT_DATE.Size = new System.Drawing.Size(147, 20);
+            this.dateTimePickerAKT_DATE.Size = new System.Drawing.Size(203, 20);
             this.dateTimePickerAKT_DATE.TabIndex = 2;
             // 
             // textBoxAKT_NUM
             // 
-            this.textBoxAKT_NUM.Location = new System.Drawing.Point(157, 33);
+            this.textBoxAKT_NUM.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxAKT_NUM.Location = new System.Drawing.Point(213, 33);
             this.textBoxAKT_NUM.Name = "textBoxAKT_NUM";
-            this.textBoxAKT_NUM.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAKT_NUM.Size = new System.Drawing.Size(203, 20);
             this.textBoxAKT_NUM.TabIndex = 3;
             // 
             // button1
@@ -1198,177 +1444,93 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // PeremZakTable
+            // label51
             // 
-            this.PeremZakTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.PeremZakTable.ColumnCount = 2;
-            this.PeremZakTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49F));
-            this.PeremZakTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51F));
-            this.PeremZakTable.Controls.Add(this.label43, 0, 0);
-            this.PeremZakTable.Controls.Add(this.label44, 0, 1);
-            this.PeremZakTable.Controls.Add(this.label45, 0, 2);
-            this.PeremZakTable.Controls.Add(this.label46, 0, 3);
-            this.PeremZakTable.Controls.Add(this.label47, 0, 4);
-            this.PeremZakTable.Controls.Add(this.label50, 0, 7);
-            this.PeremZakTable.Controls.Add(this.textBoxSOGL_ZAK_NUM, 1, 0);
-            this.PeremZakTable.Controls.Add(this.textBoxNEW_ZAK_FIO, 1, 2);
-            this.PeremZakTable.Controls.Add(this.textBoxNEW_ZAK_ADRES, 1, 3);
-            this.PeremZakTable.Controls.Add(this.textBoxNEW_ZAK_PHONE, 1, 4);
-            this.PeremZakTable.Controls.Add(this.textBoxNEW_ZAK_EMAIL, 1, 5);
-            this.PeremZakTable.Controls.Add(this.label49, 0, 5);
-            this.PeremZakTable.Controls.Add(this.label48, 0, 6);
-            this.PeremZakTable.Controls.Add(this.textBoxNEW_INN_PASP_BANK, 1, 6);
-            this.PeremZakTable.Controls.Add(this.textBoxNEW_ZAK_EKZ, 1, 7);
-            this.PeremZakTable.Controls.Add(this.dateTimePickerSOGL_ZAK_DATE, 1, 1);
-            this.PeremZakTable.Location = new System.Drawing.Point(675, 52);
-            this.PeremZakTable.Name = "PeremZakTable";
-            this.PeremZakTable.RowCount = 8;
-            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.PeremZakTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.PeremZakTable.Size = new System.Drawing.Size(200, 234);
-            this.PeremZakTable.TabIndex = 9;
+            this.label51.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(4, 7);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(97, 13);
+            this.label51.TabIndex = 0;
+            this.label51.Text = "Дата соглашения";
             // 
-            // label43
+            // label52
             // 
-            this.label43.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(4, 1);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(68, 25);
-            this.label43.TabIndex = 0;
-            this.label43.Text = "Номер соглашения";
+            this.label52.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(4, 33);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(105, 13);
+            this.label52.TabIndex = 1;
+            this.label52.Text = "Номер соглашения";
             // 
-            // label44
+            // label53
             // 
-            this.label44.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(4, 27);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(68, 25);
-            this.label44.TabIndex = 1;
-            this.label44.Text = "Дата соглашения";
+            this.label53.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(4, 59);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(138, 13);
+            this.label53.TabIndex = 2;
+            this.label53.Text = "Дата заявления студента";
             // 
-            // label45
+            // label54
             // 
-            this.label45.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(4, 53);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(75, 25);
-            this.label45.TabIndex = 2;
-            this.label45.Text = "ФИО нового заказчика";
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(4, 79);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(199, 13);
+            this.label54.TabIndex = 3;
+            this.label54.Text = "Новый заказчик (ФИО/Организация)";
             // 
-            // label46
+            // label55
             // 
-            this.label46.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(4, 79);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(89, 25);
-            this.label46.TabIndex = 3;
-            this.label46.Text = "Адрес проживания/Юр. адрес нового заказчика";
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(4, 105);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(137, 13);
+            this.label55.TabIndex = 4;
+            this.label55.Text = "Количество экземпляров";
             // 
-            // label47
+            // dateTimePickerFAM_SOGL_DATE
             // 
-            this.label47.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(4, 111);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(83, 13);
-            this.label47.TabIndex = 4;
-            this.label47.Text = "Телефон/факс";
+            this.dateTimePickerFAM_SOGL_DATE.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dateTimePickerFAM_SOGL_DATE.Location = new System.Drawing.Point(213, 4);
+            this.dateTimePickerFAM_SOGL_DATE.Name = "dateTimePickerFAM_SOGL_DATE";
+            this.dateTimePickerFAM_SOGL_DATE.Size = new System.Drawing.Size(203, 20);
+            this.dateTimePickerFAM_SOGL_DATE.TabIndex = 5;
             // 
-            // label49
+            // dateTimePickerZAV_DATE
             // 
-            this.label49.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(4, 131);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(75, 25);
-            this.label49.TabIndex = 6;
-            this.label49.Text = "Адрес электронной почты";
+            this.dateTimePickerZAV_DATE.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dateTimePickerZAV_DATE.Location = new System.Drawing.Point(213, 56);
+            this.dateTimePickerZAV_DATE.Name = "dateTimePickerZAV_DATE";
+            this.dateTimePickerZAV_DATE.Size = new System.Drawing.Size(203, 20);
+            this.dateTimePickerZAV_DATE.TabIndex = 6;
             // 
-            // label50
+            // textBoxFAM_SOGL_NUM
             // 
-            this.label50.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(4, 188);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(78, 39);
-            this.label50.TabIndex = 7;
-            this.label50.Text = "Количество экземпляров соглашения";
+            this.textBoxFAM_SOGL_NUM.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxFAM_SOGL_NUM.Location = new System.Drawing.Point(213, 30);
+            this.textBoxFAM_SOGL_NUM.Name = "textBoxFAM_SOGL_NUM";
+            this.textBoxFAM_SOGL_NUM.Size = new System.Drawing.Size(203, 20);
+            this.textBoxFAM_SOGL_NUM.TabIndex = 7;
             // 
-            // textBoxSOGL_ZAK_NUM
+            // textBoxNEW_FAM_FIO
             // 
-            this.textBoxSOGL_ZAK_NUM.Location = new System.Drawing.Point(101, 4);
-            this.textBoxSOGL_ZAK_NUM.Name = "textBoxSOGL_ZAK_NUM";
-            this.textBoxSOGL_ZAK_NUM.Size = new System.Drawing.Size(95, 20);
-            this.textBoxSOGL_ZAK_NUM.TabIndex = 8;
+            this.textBoxNEW_FAM_FIO.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxNEW_FAM_FIO.Location = new System.Drawing.Point(213, 82);
+            this.textBoxNEW_FAM_FIO.Name = "textBoxNEW_FAM_FIO";
+            this.textBoxNEW_FAM_FIO.Size = new System.Drawing.Size(203, 20);
+            this.textBoxNEW_FAM_FIO.TabIndex = 8;
             // 
-            // textBoxNEW_ZAK_FIO
+            // textBoxFAM_EKZ
             // 
-            this.textBoxNEW_ZAK_FIO.Location = new System.Drawing.Point(101, 56);
-            this.textBoxNEW_ZAK_FIO.Name = "textBoxNEW_ZAK_FIO";
-            this.textBoxNEW_ZAK_FIO.Size = new System.Drawing.Size(95, 20);
-            this.textBoxNEW_ZAK_FIO.TabIndex = 9;
-            // 
-            // textBoxNEW_ZAK_ADRES
-            // 
-            this.textBoxNEW_ZAK_ADRES.Location = new System.Drawing.Point(101, 82);
-            this.textBoxNEW_ZAK_ADRES.Name = "textBoxNEW_ZAK_ADRES";
-            this.textBoxNEW_ZAK_ADRES.Size = new System.Drawing.Size(95, 20);
-            this.textBoxNEW_ZAK_ADRES.TabIndex = 10;
-            // 
-            // textBoxNEW_ZAK_PHONE
-            // 
-            this.textBoxNEW_ZAK_PHONE.Location = new System.Drawing.Point(101, 108);
-            this.textBoxNEW_ZAK_PHONE.Name = "textBoxNEW_ZAK_PHONE";
-            this.textBoxNEW_ZAK_PHONE.Size = new System.Drawing.Size(95, 20);
-            this.textBoxNEW_ZAK_PHONE.TabIndex = 11;
-            // 
-            // textBoxNEW_ZAK_EMAIL
-            // 
-            this.textBoxNEW_ZAK_EMAIL.Location = new System.Drawing.Point(101, 134);
-            this.textBoxNEW_ZAK_EMAIL.Name = "textBoxNEW_ZAK_EMAIL";
-            this.textBoxNEW_ZAK_EMAIL.Size = new System.Drawing.Size(95, 20);
-            this.textBoxNEW_ZAK_EMAIL.TabIndex = 12;
-            // 
-            // label48
-            // 
-            this.label48.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(4, 157);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(89, 25);
-            this.label48.TabIndex = 13;
-            this.label48.Text = "ИНН, паспортные данные/Банковские реквизиты";
-            // 
-            // textBoxNEW_INN_PASP_BANK
-            // 
-            this.textBoxNEW_INN_PASP_BANK.Location = new System.Drawing.Point(101, 160);
-            this.textBoxNEW_INN_PASP_BANK.Name = "textBoxNEW_INN_PASP_BANK";
-            this.textBoxNEW_INN_PASP_BANK.Size = new System.Drawing.Size(95, 20);
-            this.textBoxNEW_INN_PASP_BANK.TabIndex = 14;
-            // 
-            // textBoxNEW_ZAK_EKZ
-            // 
-            this.textBoxNEW_ZAK_EKZ.Location = new System.Drawing.Point(101, 186);
-            this.textBoxNEW_ZAK_EKZ.Name = "textBoxNEW_ZAK_EKZ";
-            this.textBoxNEW_ZAK_EKZ.Size = new System.Drawing.Size(95, 20);
-            this.textBoxNEW_ZAK_EKZ.TabIndex = 15;
-            // 
-            // dateTimePickerSOGL_ZAK_DATE
-            // 
-            this.dateTimePickerSOGL_ZAK_DATE.Location = new System.Drawing.Point(101, 30);
-            this.dateTimePickerSOGL_ZAK_DATE.Name = "dateTimePickerSOGL_ZAK_DATE";
-            this.dateTimePickerSOGL_ZAK_DATE.Size = new System.Drawing.Size(95, 20);
-            this.dateTimePickerSOGL_ZAK_DATE.TabIndex = 16;
+            this.textBoxFAM_EKZ.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxFAM_EKZ.Location = new System.Drawing.Point(213, 108);
+            this.textBoxFAM_EKZ.Name = "textBoxFAM_EKZ";
+            this.textBoxFAM_EKZ.Size = new System.Drawing.Size(203, 20);
+            this.textBoxFAM_EKZ.TabIndex = 9;
             // 
             // Form1
             // 
@@ -1392,12 +1554,14 @@
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.DogovorTable.ResumeLayout(false);
-            this.DogovorTable.PerformLayout();
-            this.AktTable.ResumeLayout(false);
-            this.AktTable.PerformLayout();
             this.PeremZakTable.ResumeLayout(false);
             this.PeremZakTable.PerformLayout();
+            this.DogovorTable.ResumeLayout(false);
+            this.DogovorTable.PerformLayout();
+            this.SmenaFamiliiTable.ResumeLayout(false);
+            this.SmenaFamiliiTable.PerformLayout();
+            this.AktTable.ResumeLayout(false);
+            this.AktTable.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1522,6 +1686,16 @@
         private System.Windows.Forms.TextBox textBoxNEW_INN_PASP_BANK;
         private System.Windows.Forms.TextBox textBoxNEW_ZAK_EKZ;
         private System.Windows.Forms.DateTimePicker dateTimePickerSOGL_ZAK_DATE;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.DateTimePicker dateTimePickerFAM_SOGL_DATE;
+        private System.Windows.Forms.DateTimePicker dateTimePickerZAV_DATE;
+        private System.Windows.Forms.TextBox textBoxFAM_SOGL_NUM;
+        private System.Windows.Forms.TextBox textBoxNEW_FAM_FIO;
+        private System.Windows.Forms.TextBox textBoxFAM_EKZ;
     }
 }
 

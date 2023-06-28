@@ -288,13 +288,20 @@ namespace Praktika2
                     }
                     break;
                 case ("Смена фамилии"):
+                    items.Add("FAM_SOGL_DATE", dateTimePickerFAM_SOGL_DATE.Text);
+                    items.Add("FAM_SOGL_NUM", textBoxFAM_SOGL_NUM.Text);
+                    items.Add("ZAV_DATE", dateTimePickerZAV_DATE.Text);
+                    items.Add("NEW_ZAK_FIO", textBoxNEW_FAM_FIO.Text);
+                    items.Add("FAM_EKZ", textBoxFAM_EKZ.Text);
                     if (checkBox1.Checked)
                     {
-
+                        var paster = new WordPaster("Смена фамилии юр.docx");
+                        paster.Process(items);
                     }
                     else
                     {
-
+                        var paster = new WordPaster("Смена фамилии.docx");
+                        paster.Process(items);
                     }
                     break;
                 case ("Изменение стоимости"):
