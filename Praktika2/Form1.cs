@@ -257,13 +257,24 @@ namespace Praktika2
                     }
                     break;
                 case ("Доп. соглашение"):
+                    items.Add("DOP_SOGL_DATE", dateTimePickerDOP_SOGL_DATE.Text);
+                    items.Add("DOP_SOGL_NUM", textBoxDOP_SOGL_NUM.Text);
+                    items.Add("POLN_STOIM", textBoxPOLN_STOIM.Text);
+                    items.Add("DSYEARS", textBoxDSYEARS.Text);
+                    items.Add("DSYEARS_PRICE", textBoxDSYEARS_PRICE.Text);
+                    items.Add("OSEN", textBoxOSEN.Text);
+                    items.Add("VESNA", textBoxVESNA.Text);
+                    items.Add("DS_EKZ", textBoxDS_EKZ.Text);
+                    items.Add("<STUDENT_F_IO>", ChangeName(textBoxSTUDENT_FIO.Text));
                     if (checkBox1.Checked)
                     {
-
+                        var paster = new WordPaster("Доп соглашение юр.docx");
+                        paster.Process(items);
                     }
                     else
                     {
-
+                        var paster = new WordPaster("Доп соглашение.docx");
+                        paster.Process(items);
                     }
                     break;
                 case ("Перемена заказчика"):
@@ -288,11 +299,11 @@ namespace Praktika2
                     }
                     break;
                 case ("Смена фамилии"):
-                    items.Add("FAM_SOGL_DATE", dateTimePickerFAM_SOGL_DATE.Text);
-                    items.Add("FAM_SOGL_NUM", textBoxFAM_SOGL_NUM.Text);
-                    items.Add("ZAV_DATE", dateTimePickerZAV_DATE.Text);
-                    items.Add("NEW_ZAK_FIO", textBoxNEW_FAM_FIO.Text);
-                    items.Add("FAM_EKZ", textBoxFAM_EKZ.Text);
+                    items.Add("<FAM_SOGL_DATE>", dateTimePickerFAM_SOGL_DATE.Text);
+                    items.Add("<FAM_SOGL_NUM>", textBoxFAM_SOGL_NUM.Text);
+                    items.Add("<ZAV_DATE>", dateTimePickerZAV_DATE.Text);
+                    items.Add("<NEW_ZAK_FIO>", textBoxNEW_FAM_FIO.Text);
+                    items.Add("<FAM_EKZ>", textBoxFAM_EKZ.Text);
                     if (checkBox1.Checked)
                     {
                         var paster = new WordPaster("Смена фамилии юр.docx");
@@ -305,13 +316,23 @@ namespace Praktika2
                     }
                     break;
                 case ("Изменение стоимости"):
+                    items.Add("<IZM_ST_DATE>", dateTimePickerIZM_ST_DATE.Text);
+                    items.Add("<IZM_ST_NUM>", textBoxIZM_ST_NUM.Text);
+                    items.Add("<NEW_FULL_PRICE>", textBoxNEW_FULL_PRICE.Text);
+                    items.Add("<NYEARS>", textBoxNYEARS.Text);
+                    items.Add("<NEW_OSEN>", textBoxNEW_OSEN.Text);
+                    items.Add("<NEW_VESNA>", textBoxNEW_VESNA.Text);
+                    items.Add("<NEW_PRICE_EKZ>", textBoxNEW_PRICE_EKZ.Text);
+                    items.Add("<STUDENT_F_IO>", ChangeName(textBoxSTUDENT_FIO.Text));
                     if (checkBox1.Checked)
                     {
-
+                        var paster = new WordPaster("Изменение стоимости юр.docx");
+                        paster.Process(items);
                     }
                     else
                     {
-
+                        var paster = new WordPaster("Изменение стоимости.docx");
+                        paster.Process(items);
                     }
                     break;
                 case ("Мат. капитал"):
