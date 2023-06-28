@@ -336,13 +336,27 @@ namespace Praktika2
                     }
                     break;
                 case ("Мат. капитал"):
+                    items.Add("<MK_DATE>", dateTimePickerMK_DATE.Text);
+                    items.Add("<MK_NUM>", textBoxMK_NUM.Text);
+                    items.Add("<MK_YEARS>", textBoxMK_YEARS.Text);
+                    items.Add("<MK_YERS_PRICE>", textBoxMK_YERS_PRICE.Text);
+                    items.Add("<MK_OSEN>", textBoxMK_OSEN.Text);
+                    items.Add("<MK_VESNA>", textBoxMK_VESNA.Text);
+                    items.Add("<PLATA_DATE>", dateTimePickerPLATA_DATE.Text);
+                    items.Add("<SERT_NUM>", textBoxSERT_NUM.Text);
+                    items.Add("<SERT_SER>", textBoxSERT_SER.Text);
+                    items.Add("<SERT_VID>", textBoxSERT_VID.Text);
+                    items.Add("<SERT_NAME>", textBoxSERT_NAME.Text);
+                    items.Add("<MK_EKZ>", textBoxMK_EKZ.Text);
                     if (checkBox1.Checked)
                     {
-
+                        var paster = new WordPaster("Мат капитал юр.docx");
+                        paster.Process(items);
                     }
                     else
                     {
-
+                        var paster = new WordPaster("Мат капитал.docx");
+                        paster.Process(items);
                     }
                     break;
                 case ("Переводы"):
@@ -368,7 +382,6 @@ namespace Praktika2
                 default:
                     break;
             }
-
         }
     }
 }

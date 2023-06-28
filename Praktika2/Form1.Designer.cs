@@ -134,6 +134,17 @@
             this.textBoxSTUD_PASP_VID = new System.Windows.Forms.TextBox();
             this.dateTimePickerSTUDENT_BD = new System.Windows.Forms.DateTimePicker();
             this.MatKapitalTable = new System.Windows.Forms.TableLayoutPanel();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label72 = new System.Windows.Forms.Label();
+            this.label73 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label77 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.label81 = new System.Windows.Forms.Label();
+            this.label82 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
             this.PerevodiTable = new System.Windows.Forms.TableLayoutPanel();
             this.IzmCedTable = new System.Windows.Forms.TableLayoutPanel();
             this.SmenaFamiliiTable = new System.Windows.Forms.TableLayoutPanel();
@@ -148,13 +159,21 @@
             this.textBoxNEW_FAM_FIO = new System.Windows.Forms.TextBox();
             this.textBoxFAM_EKZ = new System.Windows.Forms.TextBox();
             this.IzmStoimTable = new System.Windows.Forms.TableLayoutPanel();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.dateTimePickerIZM_ST_DATE = new System.Windows.Forms.DateTimePicker();
+            this.textBoxIZM_ST_NUM = new System.Windows.Forms.TextBox();
+            this.textBoxNEW_FULL_PRICE = new System.Windows.Forms.TextBox();
+            this.textBoxNYEARS = new System.Windows.Forms.TextBox();
+            this.textBoxNEW_OSEN = new System.Windows.Forms.TextBox();
+            this.textBoxNEW_VESNA = new System.Windows.Forms.TextBox();
+            this.textBoxNEW_PRICE_EKZ = new System.Windows.Forms.TextBox();
             this.DopSoglTable = new System.Windows.Forms.TableLayoutPanel();
-            this.AktTable = new System.Windows.Forms.TableLayoutPanel();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.dateTimePickerAKT_DATE = new System.Windows.Forms.DateTimePicker();
-            this.textBoxAKT_NUM = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.label56 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
@@ -171,31 +190,25 @@
             this.textBoxVESNA = new System.Windows.Forms.TextBox();
             this.textBoxDS_EKZ = new System.Windows.Forms.TextBox();
             this.dateTimePickerDOP_SOGL_DATE = new System.Windows.Forms.DateTimePicker();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
-            this.dateTimePickerIZM_ST_DATE = new System.Windows.Forms.DateTimePicker();
-            this.textBoxIZM_ST_NUM = new System.Windows.Forms.TextBox();
-            this.textBoxNEW_FULL_PRICE = new System.Windows.Forms.TextBox();
-            this.textBoxNYEARS = new System.Windows.Forms.TextBox();
-            this.textBoxNEW_OSEN = new System.Windows.Forms.TextBox();
-            this.textBoxNEW_VESNA = new System.Windows.Forms.TextBox();
-            this.textBoxNEW_PRICE_EKZ = new System.Windows.Forms.TextBox();
-            this.label71 = new System.Windows.Forms.Label();
-            this.label72 = new System.Windows.Forms.Label();
-            this.label73 = new System.Windows.Forms.Label();
-            this.label75 = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
-            this.label77 = new System.Windows.Forms.Label();
-            this.label78 = new System.Windows.Forms.Label();
-            this.label79 = new System.Windows.Forms.Label();
-            this.label80 = new System.Windows.Forms.Label();
-            this.label81 = new System.Windows.Forms.Label();
-            this.label82 = new System.Windows.Forms.Label();
+            this.AktTable = new System.Windows.Forms.TableLayoutPanel();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.dateTimePickerAKT_DATE = new System.Windows.Forms.DateTimePicker();
+            this.textBoxAKT_NUM = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label74 = new System.Windows.Forms.Label();
+            this.textBoxMK_NUM = new System.Windows.Forms.TextBox();
+            this.textBoxMK_YEARS = new System.Windows.Forms.TextBox();
+            this.textBoxMK_YERS_PRICE = new System.Windows.Forms.TextBox();
+            this.textBoxMK_OSEN = new System.Windows.Forms.TextBox();
+            this.textBoxMK_VESNA = new System.Windows.Forms.TextBox();
+            this.textBoxSERT_NUM = new System.Windows.Forms.TextBox();
+            this.textBoxSERT_SER = new System.Windows.Forms.TextBox();
+            this.textBoxSERT_VID = new System.Windows.Forms.TextBox();
+            this.textBoxSERT_NAME = new System.Windows.Forms.TextBox();
+            this.textBoxMK_EKZ = new System.Windows.Forms.TextBox();
+            this.dateTimePickerMK_DATE = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerPLATA_DATE = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -1334,19 +1347,32 @@
             this.MatKapitalTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.MatKapitalTable.ColumnCount = 2;
             this.MatKapitalTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.MatKapitalTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.MatKapitalTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.MatKapitalTable.Controls.Add(this.label71, 0, 0);
             this.MatKapitalTable.Controls.Add(this.label72, 0, 1);
             this.MatKapitalTable.Controls.Add(this.label73, 0, 2);
-            this.MatKapitalTable.Controls.Add(this.label76, 0, 5);
-            this.MatKapitalTable.Controls.Add(this.label77, 0, 6);
-            this.MatKapitalTable.Controls.Add(this.label78, 0, 7);
-            this.MatKapitalTable.Controls.Add(this.label79, 0, 8);
-            this.MatKapitalTable.Controls.Add(this.label80, 0, 9);
-            this.MatKapitalTable.Controls.Add(this.label81, 0, 10);
-            this.MatKapitalTable.Controls.Add(this.label82, 0, 11);
             this.MatKapitalTable.Controls.Add(this.label75, 0, 3);
-            this.MatKapitalTable.Location = new System.Drawing.Point(464, 111);
+            this.MatKapitalTable.Controls.Add(this.label76, 0, 4);
+            this.MatKapitalTable.Controls.Add(this.label77, 0, 5);
+            this.MatKapitalTable.Controls.Add(this.label78, 0, 6);
+            this.MatKapitalTable.Controls.Add(this.label79, 0, 7);
+            this.MatKapitalTable.Controls.Add(this.label80, 0, 8);
+            this.MatKapitalTable.Controls.Add(this.label81, 0, 9);
+            this.MatKapitalTable.Controls.Add(this.label82, 0, 10);
+            this.MatKapitalTable.Controls.Add(this.label74, 0, 11);
+            this.MatKapitalTable.Controls.Add(this.textBoxMK_NUM, 1, 1);
+            this.MatKapitalTable.Controls.Add(this.textBoxMK_YEARS, 1, 2);
+            this.MatKapitalTable.Controls.Add(this.textBoxMK_YERS_PRICE, 1, 3);
+            this.MatKapitalTable.Controls.Add(this.textBoxMK_OSEN, 1, 4);
+            this.MatKapitalTable.Controls.Add(this.textBoxMK_VESNA, 1, 5);
+            this.MatKapitalTable.Controls.Add(this.textBoxSERT_NUM, 1, 7);
+            this.MatKapitalTable.Controls.Add(this.textBoxSERT_SER, 1, 8);
+            this.MatKapitalTable.Controls.Add(this.textBoxSERT_VID, 1, 9);
+            this.MatKapitalTable.Controls.Add(this.textBoxSERT_NAME, 1, 10);
+            this.MatKapitalTable.Controls.Add(this.textBoxMK_EKZ, 1, 11);
+            this.MatKapitalTable.Controls.Add(this.dateTimePickerMK_DATE, 1, 0);
+            this.MatKapitalTable.Controls.Add(this.dateTimePickerPLATA_DATE, 1, 6);
+            this.MatKapitalTable.Location = new System.Drawing.Point(3, 3);
             this.MatKapitalTable.Name = "MatKapitalTable";
             this.MatKapitalTable.RowCount = 12;
             this.MatKapitalTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
@@ -1355,14 +1381,124 @@
             this.MatKapitalTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.MatKapitalTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.MatKapitalTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.MatKapitalTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.MatKapitalTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
             this.MatKapitalTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.MatKapitalTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.MatKapitalTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.MatKapitalTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.MatKapitalTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.MatKapitalTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.MatKapitalTable.Size = new System.Drawing.Size(269, 358);
+            this.MatKapitalTable.Size = new System.Drawing.Size(420, 316);
             this.MatKapitalTable.TabIndex = 7;
+            // 
+            // label71
+            // 
+            this.label71.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label71.AutoSize = true;
+            this.label71.Location = new System.Drawing.Point(4, 7);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(97, 13);
+            this.label71.TabIndex = 0;
+            this.label71.Text = "Дата соглашения";
+            // 
+            // label72
+            // 
+            this.label72.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label72.AutoSize = true;
+            this.label72.Location = new System.Drawing.Point(4, 33);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(105, 13);
+            this.label72.TabIndex = 1;
+            this.label72.Text = "Номер соглашения";
+            // 
+            // label73
+            // 
+            this.label73.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label73.AutoSize = true;
+            this.label73.Location = new System.Drawing.Point(4, 59);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(190, 13);
+            this.label73.TabIndex = 2;
+            this.label73.Text = "Учебный год (например, 2022/2023)";
+            // 
+            // label76
+            // 
+            this.label76.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label76.AutoSize = true;
+            this.label76.Location = new System.Drawing.Point(4, 105);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(174, 25);
+            this.label76.TabIndex = 5;
+            this.label76.Text = "Стоимость обучения за осенний семестр";
+            // 
+            // label77
+            // 
+            this.label77.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label77.AutoSize = true;
+            this.label77.Location = new System.Drawing.Point(4, 131);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(180, 25);
+            this.label77.TabIndex = 6;
+            this.label77.Text = "Стоимость обучения за весенний семестр";
+            // 
+            // label78
+            // 
+            this.label78.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label78.AutoSize = true;
+            this.label78.Location = new System.Drawing.Point(4, 162);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(104, 13);
+            this.label78.TabIndex = 7;
+            this.label78.Text = "Оплата не позднее";
+            // 
+            // label79
+            // 
+            this.label79.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label79.AutoSize = true;
+            this.label79.Location = new System.Drawing.Point(4, 188);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(103, 13);
+            this.label79.TabIndex = 8;
+            this.label79.Text = "Сертификат номер";
+            // 
+            // label80
+            // 
+            this.label80.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label80.AutoSize = true;
+            this.label80.Location = new System.Drawing.Point(4, 215);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(101, 13);
+            this.label80.TabIndex = 9;
+            this.label80.Text = "Сертификат серия";
+            // 
+            // label81
+            // 
+            this.label81.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label81.AutoSize = true;
+            this.label81.Location = new System.Drawing.Point(4, 241);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(103, 13);
+            this.label81.TabIndex = 10;
+            this.label81.Text = "Сертификат выдан";
+            // 
+            // label82
+            // 
+            this.label82.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label82.AutoSize = true;
+            this.label82.Location = new System.Drawing.Point(4, 267);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(106, 13);
+            this.label82.TabIndex = 11;
+            this.label82.Text = "Сертификат на имя";
+            // 
+            // label75
+            // 
+            this.label75.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label75.AutoSize = true;
+            this.label75.Location = new System.Drawing.Point(4, 85);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(191, 13);
+            this.label75.TabIndex = 4;
+            this.label75.Text = "Стоимость обучения за учебный год";
             // 
             // PerevodiTable
             // 
@@ -1540,6 +1676,132 @@
             this.IzmStoimTable.Size = new System.Drawing.Size(420, 191);
             this.IzmStoimTable.TabIndex = 3;
             // 
+            // label64
+            // 
+            this.label64.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label64.AutoSize = true;
+            this.label64.Location = new System.Drawing.Point(4, 7);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(97, 13);
+            this.label64.TabIndex = 0;
+            this.label64.Text = "Дата соглашения";
+            // 
+            // label65
+            // 
+            this.label65.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label65.AutoSize = true;
+            this.label65.Location = new System.Drawing.Point(4, 33);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(105, 13);
+            this.label65.TabIndex = 1;
+            this.label65.Text = "Номер соглашения";
+            // 
+            // label66
+            // 
+            this.label66.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label66.AutoSize = true;
+            this.label66.Location = new System.Drawing.Point(4, 59);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(191, 13);
+            this.label66.TabIndex = 2;
+            this.label66.Text = "Стоимость обучения за учебный год";
+            // 
+            // label67
+            // 
+            this.label67.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(4, 85);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(190, 13);
+            this.label67.TabIndex = 3;
+            this.label67.Text = "Учебный год (например, 2022/2023)";
+            // 
+            // label68
+            // 
+            this.label68.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label68.AutoSize = true;
+            this.label68.Location = new System.Drawing.Point(4, 105);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(174, 25);
+            this.label68.TabIndex = 4;
+            this.label68.Text = "Стоимость обучения за осенний семестр";
+            // 
+            // label69
+            // 
+            this.label69.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label69.AutoSize = true;
+            this.label69.Location = new System.Drawing.Point(4, 131);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(180, 25);
+            this.label69.TabIndex = 5;
+            this.label69.Text = "Стоимость обучения за весенний семестр";
+            // 
+            // label70
+            // 
+            this.label70.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label70.AutoSize = true;
+            this.label70.Location = new System.Drawing.Point(4, 167);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(137, 13);
+            this.label70.TabIndex = 6;
+            this.label70.Text = "Количество экземпляров";
+            // 
+            // dateTimePickerIZM_ST_DATE
+            // 
+            this.dateTimePickerIZM_ST_DATE.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dateTimePickerIZM_ST_DATE.Location = new System.Drawing.Point(213, 4);
+            this.dateTimePickerIZM_ST_DATE.Name = "dateTimePickerIZM_ST_DATE";
+            this.dateTimePickerIZM_ST_DATE.Size = new System.Drawing.Size(203, 20);
+            this.dateTimePickerIZM_ST_DATE.TabIndex = 7;
+            // 
+            // textBoxIZM_ST_NUM
+            // 
+            this.textBoxIZM_ST_NUM.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxIZM_ST_NUM.Location = new System.Drawing.Point(213, 30);
+            this.textBoxIZM_ST_NUM.Name = "textBoxIZM_ST_NUM";
+            this.textBoxIZM_ST_NUM.Size = new System.Drawing.Size(203, 20);
+            this.textBoxIZM_ST_NUM.TabIndex = 8;
+            // 
+            // textBoxNEW_FULL_PRICE
+            // 
+            this.textBoxNEW_FULL_PRICE.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxNEW_FULL_PRICE.Location = new System.Drawing.Point(213, 56);
+            this.textBoxNEW_FULL_PRICE.Name = "textBoxNEW_FULL_PRICE";
+            this.textBoxNEW_FULL_PRICE.Size = new System.Drawing.Size(203, 20);
+            this.textBoxNEW_FULL_PRICE.TabIndex = 9;
+            // 
+            // textBoxNYEARS
+            // 
+            this.textBoxNYEARS.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxNYEARS.Location = new System.Drawing.Point(213, 82);
+            this.textBoxNYEARS.Name = "textBoxNYEARS";
+            this.textBoxNYEARS.Size = new System.Drawing.Size(203, 20);
+            this.textBoxNYEARS.TabIndex = 10;
+            // 
+            // textBoxNEW_OSEN
+            // 
+            this.textBoxNEW_OSEN.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxNEW_OSEN.Location = new System.Drawing.Point(213, 108);
+            this.textBoxNEW_OSEN.Name = "textBoxNEW_OSEN";
+            this.textBoxNEW_OSEN.Size = new System.Drawing.Size(203, 20);
+            this.textBoxNEW_OSEN.TabIndex = 11;
+            // 
+            // textBoxNEW_VESNA
+            // 
+            this.textBoxNEW_VESNA.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxNEW_VESNA.Location = new System.Drawing.Point(213, 134);
+            this.textBoxNEW_VESNA.Name = "textBoxNEW_VESNA";
+            this.textBoxNEW_VESNA.Size = new System.Drawing.Size(203, 20);
+            this.textBoxNEW_VESNA.TabIndex = 12;
+            // 
+            // textBoxNEW_PRICE_EKZ
+            // 
+            this.textBoxNEW_PRICE_EKZ.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxNEW_PRICE_EKZ.Location = new System.Drawing.Point(213, 160);
+            this.textBoxNEW_PRICE_EKZ.Name = "textBoxNEW_PRICE_EKZ";
+            this.textBoxNEW_PRICE_EKZ.Size = new System.Drawing.Size(203, 20);
+            this.textBoxNEW_PRICE_EKZ.TabIndex = 13;
+            // 
             // DopSoglTable
             // 
             this.DopSoglTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
@@ -1575,68 +1837,6 @@
             this.DopSoglTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.DopSoglTable.Size = new System.Drawing.Size(420, 213);
             this.DopSoglTable.TabIndex = 1;
-            // 
-            // AktTable
-            // 
-            this.AktTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.AktTable.ColumnCount = 2;
-            this.AktTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.AktTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.AktTable.Controls.Add(this.label28, 0, 0);
-            this.AktTable.Controls.Add(this.label29, 0, 1);
-            this.AktTable.Controls.Add(this.dateTimePickerAKT_DATE, 1, 0);
-            this.AktTable.Controls.Add(this.textBoxAKT_NUM, 1, 1);
-            this.AktTable.Location = new System.Drawing.Point(3, 3);
-            this.AktTable.Name = "AktTable";
-            this.AktTable.RowCount = 2;
-            this.AktTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.AktTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.AktTable.Size = new System.Drawing.Size(420, 59);
-            this.AktTable.TabIndex = 0;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(4, 1);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(59, 13);
-            this.label28.TabIndex = 0;
-            this.label28.Text = "Дата акта";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(4, 30);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(67, 13);
-            this.label29.TabIndex = 1;
-            this.label29.Text = "Номер акта";
-            // 
-            // dateTimePickerAKT_DATE
-            // 
-            this.dateTimePickerAKT_DATE.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dateTimePickerAKT_DATE.Location = new System.Drawing.Point(213, 4);
-            this.dateTimePickerAKT_DATE.Name = "dateTimePickerAKT_DATE";
-            this.dateTimePickerAKT_DATE.Size = new System.Drawing.Size(203, 20);
-            this.dateTimePickerAKT_DATE.TabIndex = 2;
-            // 
-            // textBoxAKT_NUM
-            // 
-            this.textBoxAKT_NUM.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBoxAKT_NUM.Location = new System.Drawing.Point(213, 33);
-            this.textBoxAKT_NUM.Name = "textBoxAKT_NUM";
-            this.textBoxAKT_NUM.Size = new System.Drawing.Size(203, 20);
-            this.textBoxAKT_NUM.TabIndex = 3;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(823, 563);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Создать";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label56
             // 
@@ -1774,241 +1974,173 @@
             this.dateTimePickerDOP_SOGL_DATE.Size = new System.Drawing.Size(203, 20);
             this.dateTimePickerDOP_SOGL_DATE.TabIndex = 15;
             // 
-            // label64
+            // AktTable
             // 
-            this.label64.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label64.AutoSize = true;
-            this.label64.Location = new System.Drawing.Point(4, 7);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(97, 13);
-            this.label64.TabIndex = 0;
-            this.label64.Text = "Дата соглашения";
+            this.AktTable.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.AktTable.ColumnCount = 2;
+            this.AktTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.AktTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.AktTable.Controls.Add(this.label28, 0, 0);
+            this.AktTable.Controls.Add(this.label29, 0, 1);
+            this.AktTable.Controls.Add(this.dateTimePickerAKT_DATE, 1, 0);
+            this.AktTable.Controls.Add(this.textBoxAKT_NUM, 1, 1);
+            this.AktTable.Location = new System.Drawing.Point(3, 3);
+            this.AktTable.Name = "AktTable";
+            this.AktTable.RowCount = 2;
+            this.AktTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.AktTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.AktTable.Size = new System.Drawing.Size(420, 59);
+            this.AktTable.TabIndex = 0;
             // 
-            // label65
+            // label28
             // 
-            this.label65.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(4, 33);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(105, 13);
-            this.label65.TabIndex = 1;
-            this.label65.Text = "Номер соглашения";
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(4, 1);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(59, 13);
+            this.label28.TabIndex = 0;
+            this.label28.Text = "Дата акта";
             // 
-            // label66
+            // label29
             // 
-            this.label66.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(4, 59);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(191, 13);
-            this.label66.TabIndex = 2;
-            this.label66.Text = "Стоимость обучения за учебный год";
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(4, 30);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(67, 13);
+            this.label29.TabIndex = 1;
+            this.label29.Text = "Номер акта";
             // 
-            // label67
+            // dateTimePickerAKT_DATE
             // 
-            this.label67.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(4, 85);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(190, 13);
-            this.label67.TabIndex = 3;
-            this.label67.Text = "Учебный год (например, 2022/2023)";
+            this.dateTimePickerAKT_DATE.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dateTimePickerAKT_DATE.Location = new System.Drawing.Point(213, 4);
+            this.dateTimePickerAKT_DATE.Name = "dateTimePickerAKT_DATE";
+            this.dateTimePickerAKT_DATE.Size = new System.Drawing.Size(203, 20);
+            this.dateTimePickerAKT_DATE.TabIndex = 2;
             // 
-            // label68
+            // textBoxAKT_NUM
             // 
-            this.label68.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(4, 105);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(174, 25);
-            this.label68.TabIndex = 4;
-            this.label68.Text = "Стоимость обучения за осенний семестр";
+            this.textBoxAKT_NUM.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxAKT_NUM.Location = new System.Drawing.Point(213, 33);
+            this.textBoxAKT_NUM.Name = "textBoxAKT_NUM";
+            this.textBoxAKT_NUM.Size = new System.Drawing.Size(203, 20);
+            this.textBoxAKT_NUM.TabIndex = 3;
             // 
-            // label69
+            // button1
             // 
-            this.label69.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(4, 131);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(180, 25);
-            this.label69.TabIndex = 5;
-            this.label69.Text = "Стоимость обучения за весенний семестр";
+            this.button1.Location = new System.Drawing.Point(823, 563);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Создать";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label70
+            // label74
             // 
-            this.label70.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(4, 167);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(137, 13);
-            this.label70.TabIndex = 6;
-            this.label70.Text = "Количество экземпляров";
+            this.label74.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label74.AutoSize = true;
+            this.label74.Location = new System.Drawing.Point(4, 294);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(137, 13);
+            this.label74.TabIndex = 12;
+            this.label74.Text = "Количество экземпляров";
             // 
-            // dateTimePickerIZM_ST_DATE
+            // textBoxMK_NUM
             // 
-            this.dateTimePickerIZM_ST_DATE.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dateTimePickerIZM_ST_DATE.Location = new System.Drawing.Point(213, 4);
-            this.dateTimePickerIZM_ST_DATE.Name = "dateTimePickerIZM_ST_DATE";
-            this.dateTimePickerIZM_ST_DATE.Size = new System.Drawing.Size(203, 20);
-            this.dateTimePickerIZM_ST_DATE.TabIndex = 7;
+            this.textBoxMK_NUM.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxMK_NUM.Location = new System.Drawing.Point(213, 30);
+            this.textBoxMK_NUM.Name = "textBoxMK_NUM";
+            this.textBoxMK_NUM.Size = new System.Drawing.Size(203, 20);
+            this.textBoxMK_NUM.TabIndex = 13;
             // 
-            // textBoxIZM_ST_NUM
+            // textBoxMK_YEARS
             // 
-            this.textBoxIZM_ST_NUM.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBoxIZM_ST_NUM.Location = new System.Drawing.Point(213, 30);
-            this.textBoxIZM_ST_NUM.Name = "textBoxIZM_ST_NUM";
-            this.textBoxIZM_ST_NUM.Size = new System.Drawing.Size(203, 20);
-            this.textBoxIZM_ST_NUM.TabIndex = 8;
+            this.textBoxMK_YEARS.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxMK_YEARS.Location = new System.Drawing.Point(213, 56);
+            this.textBoxMK_YEARS.Name = "textBoxMK_YEARS";
+            this.textBoxMK_YEARS.Size = new System.Drawing.Size(203, 20);
+            this.textBoxMK_YEARS.TabIndex = 14;
             // 
-            // textBoxNEW_FULL_PRICE
+            // textBoxMK_YERS_PRICE
             // 
-            this.textBoxNEW_FULL_PRICE.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBoxNEW_FULL_PRICE.Location = new System.Drawing.Point(213, 56);
-            this.textBoxNEW_FULL_PRICE.Name = "textBoxNEW_FULL_PRICE";
-            this.textBoxNEW_FULL_PRICE.Size = new System.Drawing.Size(203, 20);
-            this.textBoxNEW_FULL_PRICE.TabIndex = 9;
+            this.textBoxMK_YERS_PRICE.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxMK_YERS_PRICE.Location = new System.Drawing.Point(213, 82);
+            this.textBoxMK_YERS_PRICE.Name = "textBoxMK_YERS_PRICE";
+            this.textBoxMK_YERS_PRICE.Size = new System.Drawing.Size(203, 20);
+            this.textBoxMK_YERS_PRICE.TabIndex = 15;
             // 
-            // textBoxNYEARS
+            // textBoxMK_OSEN
             // 
-            this.textBoxNYEARS.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBoxNYEARS.Location = new System.Drawing.Point(213, 82);
-            this.textBoxNYEARS.Name = "textBoxNYEARS";
-            this.textBoxNYEARS.Size = new System.Drawing.Size(203, 20);
-            this.textBoxNYEARS.TabIndex = 10;
+            this.textBoxMK_OSEN.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxMK_OSEN.Location = new System.Drawing.Point(213, 108);
+            this.textBoxMK_OSEN.Name = "textBoxMK_OSEN";
+            this.textBoxMK_OSEN.Size = new System.Drawing.Size(203, 20);
+            this.textBoxMK_OSEN.TabIndex = 16;
             // 
-            // textBoxNEW_OSEN
+            // textBoxMK_VESNA
             // 
-            this.textBoxNEW_OSEN.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBoxNEW_OSEN.Location = new System.Drawing.Point(213, 108);
-            this.textBoxNEW_OSEN.Name = "textBoxNEW_OSEN";
-            this.textBoxNEW_OSEN.Size = new System.Drawing.Size(203, 20);
-            this.textBoxNEW_OSEN.TabIndex = 11;
+            this.textBoxMK_VESNA.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxMK_VESNA.Location = new System.Drawing.Point(213, 134);
+            this.textBoxMK_VESNA.Name = "textBoxMK_VESNA";
+            this.textBoxMK_VESNA.Size = new System.Drawing.Size(203, 20);
+            this.textBoxMK_VESNA.TabIndex = 17;
             // 
-            // textBoxNEW_VESNA
+            // textBoxSERT_NUM
             // 
-            this.textBoxNEW_VESNA.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBoxNEW_VESNA.Location = new System.Drawing.Point(213, 134);
-            this.textBoxNEW_VESNA.Name = "textBoxNEW_VESNA";
-            this.textBoxNEW_VESNA.Size = new System.Drawing.Size(203, 20);
-            this.textBoxNEW_VESNA.TabIndex = 12;
+            this.textBoxSERT_NUM.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxSERT_NUM.Location = new System.Drawing.Point(213, 185);
+            this.textBoxSERT_NUM.Name = "textBoxSERT_NUM";
+            this.textBoxSERT_NUM.Size = new System.Drawing.Size(203, 20);
+            this.textBoxSERT_NUM.TabIndex = 18;
             // 
-            // textBoxNEW_PRICE_EKZ
+            // textBoxSERT_SER
             // 
-            this.textBoxNEW_PRICE_EKZ.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBoxNEW_PRICE_EKZ.Location = new System.Drawing.Point(213, 160);
-            this.textBoxNEW_PRICE_EKZ.Name = "textBoxNEW_PRICE_EKZ";
-            this.textBoxNEW_PRICE_EKZ.Size = new System.Drawing.Size(203, 20);
-            this.textBoxNEW_PRICE_EKZ.TabIndex = 13;
+            this.textBoxSERT_SER.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxSERT_SER.Location = new System.Drawing.Point(213, 212);
+            this.textBoxSERT_SER.Name = "textBoxSERT_SER";
+            this.textBoxSERT_SER.Size = new System.Drawing.Size(203, 20);
+            this.textBoxSERT_SER.TabIndex = 19;
             // 
-            // label71
+            // textBoxSERT_VID
             // 
-            this.label71.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(4, 1);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(68, 25);
-            this.label71.TabIndex = 0;
-            this.label71.Text = "Дата соглашения";
+            this.textBoxSERT_VID.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxSERT_VID.Location = new System.Drawing.Point(213, 238);
+            this.textBoxSERT_VID.Name = "textBoxSERT_VID";
+            this.textBoxSERT_VID.Size = new System.Drawing.Size(203, 20);
+            this.textBoxSERT_VID.TabIndex = 20;
             // 
-            // label72
+            // textBoxSERT_NAME
             // 
-            this.label72.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(4, 27);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(68, 25);
-            this.label72.TabIndex = 1;
-            this.label72.Text = "Номер соглашения";
+            this.textBoxSERT_NAME.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxSERT_NAME.Location = new System.Drawing.Point(213, 264);
+            this.textBoxSERT_NAME.Name = "textBoxSERT_NAME";
+            this.textBoxSERT_NAME.Size = new System.Drawing.Size(203, 20);
+            this.textBoxSERT_NAME.TabIndex = 21;
             // 
-            // label73
+            // textBoxMK_EKZ
             // 
-            this.label73.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label73.AutoSize = true;
-            this.label73.Location = new System.Drawing.Point(4, 53);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(75, 25);
-            this.label73.TabIndex = 2;
-            this.label73.Text = "Учебный год (например, 2022/2023)";
+            this.textBoxMK_EKZ.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBoxMK_EKZ.Location = new System.Drawing.Point(213, 290);
+            this.textBoxMK_EKZ.Name = "textBoxMK_EKZ";
+            this.textBoxMK_EKZ.Size = new System.Drawing.Size(203, 20);
+            this.textBoxMK_EKZ.TabIndex = 22;
             // 
-            // label75
+            // dateTimePickerMK_DATE
             // 
-            this.label75.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label75.AutoSize = true;
-            this.label75.Location = new System.Drawing.Point(4, 105);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(71, 25);
-            this.label75.TabIndex = 4;
-            this.label75.Text = "Стоимость обучения за учебный год";
+            this.dateTimePickerMK_DATE.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dateTimePickerMK_DATE.Location = new System.Drawing.Point(213, 4);
+            this.dateTimePickerMK_DATE.Name = "dateTimePickerMK_DATE";
+            this.dateTimePickerMK_DATE.Size = new System.Drawing.Size(203, 20);
+            this.dateTimePickerMK_DATE.TabIndex = 23;
             // 
-            // label76
+            // dateTimePickerPLATA_DATE
             // 
-            this.label76.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label76.AutoSize = true;
-            this.label76.Location = new System.Drawing.Point(4, 131);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(71, 25);
-            this.label76.TabIndex = 5;
-            this.label76.Text = "Стоимость обучения за осенний семестр";
-            // 
-            // label77
-            // 
-            this.label77.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label77.AutoSize = true;
-            this.label77.Location = new System.Drawing.Point(4, 157);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(71, 25);
-            this.label77.TabIndex = 6;
-            this.label77.Text = "Стоимость обучения за весенний семестр";
-            // 
-            // label78
-            // 
-            this.label78.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label78.AutoSize = true;
-            this.label78.Location = new System.Drawing.Point(4, 183);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(62, 25);
-            this.label78.TabIndex = 7;
-            this.label78.Text = "Оплата не позднее";
-            // 
-            // label79
-            // 
-            this.label79.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label79.AutoSize = true;
-            this.label79.Location = new System.Drawing.Point(4, 209);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(71, 25);
-            this.label79.TabIndex = 8;
-            this.label79.Text = "Сертификат номер";
-            // 
-            // label80
-            // 
-            this.label80.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label80.AutoSize = true;
-            this.label80.Location = new System.Drawing.Point(4, 235);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(71, 25);
-            this.label80.TabIndex = 9;
-            this.label80.Text = "Сертификат серия";
-            // 
-            // label81
-            // 
-            this.label81.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label81.AutoSize = true;
-            this.label81.Location = new System.Drawing.Point(4, 261);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(71, 25);
-            this.label81.TabIndex = 10;
-            this.label81.Text = "Сертификат выдан";
-            // 
-            // label82
-            // 
-            this.label82.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label82.AutoSize = true;
-            this.label82.Location = new System.Drawing.Point(4, 289);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(86, 26);
-            this.label82.TabIndex = 11;
-            this.label82.Text = "Сертификат на имя";
+            this.dateTimePickerPLATA_DATE.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dateTimePickerPLATA_DATE.Location = new System.Drawing.Point(213, 160);
+            this.dateTimePickerPLATA_DATE.Name = "dateTimePickerPLATA_DATE";
+            this.dateTimePickerPLATA_DATE.Size = new System.Drawing.Size(203, 20);
+            this.dateTimePickerPLATA_DATE.TabIndex = 24;
             // 
             // Form1
             // 
@@ -2221,6 +2353,19 @@
         private System.Windows.Forms.Label label80;
         private System.Windows.Forms.Label label81;
         private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.TextBox textBoxMK_NUM;
+        private System.Windows.Forms.TextBox textBoxMK_YEARS;
+        private System.Windows.Forms.TextBox textBoxMK_YERS_PRICE;
+        private System.Windows.Forms.TextBox textBoxMK_OSEN;
+        private System.Windows.Forms.TextBox textBoxMK_VESNA;
+        private System.Windows.Forms.TextBox textBoxSERT_NUM;
+        private System.Windows.Forms.TextBox textBoxSERT_SER;
+        private System.Windows.Forms.TextBox textBoxSERT_VID;
+        private System.Windows.Forms.TextBox textBoxSERT_NAME;
+        private System.Windows.Forms.TextBox textBoxMK_EKZ;
+        private System.Windows.Forms.DateTimePicker dateTimePickerMK_DATE;
+        private System.Windows.Forms.DateTimePicker dateTimePickerPLATA_DATE;
     }
 }
 
