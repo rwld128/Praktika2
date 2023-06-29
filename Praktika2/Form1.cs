@@ -192,6 +192,7 @@ namespace Praktika2
                 {"<DOV_DATE>", dateTimePickerDOV_DATE.Value.ToString("dd.MM.yyyy")},
                 {"<DOV_NUM>", textBoxDOV_NUM.Text},
                 {"<STUDENT_FIO>", textBoxSTUDENT_FIO.Text},
+                {"<STUDENT_F_IO>", ChangeName(textBoxSTUDENT_FIO.Text)},
                 {"<STUDENT_ADRES>", textBoxSTUDENT_ADRES.Text},
                 {"<STUDENT_PHONE>", textBoxSTUDENT_PHONE.Text},
                 {"<STUDENT_EMAIL>", textBoxSTUDENT_EMAIL.Text},
@@ -211,6 +212,7 @@ namespace Praktika2
                 {"<ZAK_PASP_VID>", textBoxZAK_PASP_VID.Text},
                 {"<ZAK_PHONE>", textBoxZAK_PHONE.Text},
                 {"<ZAK_EMAIL>", textBoxZAK_EMAIL.Text}
+
             };
             Dictionary<string, string> items = new Dictionary<string, string>(origin);
             switch (comboBox1.SelectedItem.ToString())
@@ -219,7 +221,6 @@ namespace Praktika2
                     items.Add("<AKT_NUM>", textBoxAKT_NUM.Text);
                     items.Add("<AKT_DATE>", dateTimePickerAKT_DATE.Value.ToString("dd.MM.yyyy"));
                     items.Add("<YUR_ZAK_F_IO>", ChangeName(textBoxZAK_FIO.Text));
-                    items.Add("<STUDENT_F_IO>", ChangeName(textBoxSTUDENT_FIO.Text));
                     if (checkBox1.Checked)
                     {
                         var paster = new WordPaster("Акт об оказании услуг юр.docx");
@@ -265,7 +266,6 @@ namespace Praktika2
                     items.Add("OSEN", textBoxOSEN.Text);
                     items.Add("VESNA", textBoxVESNA.Text);
                     items.Add("DS_EKZ", textBoxDS_EKZ.Text);
-                    items.Add("<STUDENT_F_IO>", ChangeName(textBoxSTUDENT_FIO.Text));
                     if (checkBox1.Checked)
                     {
                         var paster = new WordPaster("Доп соглашение юр.docx");
@@ -286,7 +286,6 @@ namespace Praktika2
                     items.Add("<NEW_ZAK_EMAIL>", textBoxNEW_ZAK_EMAIL.Text);
                     items.Add("<NEW_INN_PASP_BANK>", textBoxNEW_INN_PASP_BANK.Text);
                     items.Add("<NEW_ZAK_EKZ>", textBoxNEW_ZAK_EKZ.Text);
-                    items.Add("<STUDENT_F_IO>", ChangeName(textBoxSTUDENT_FIO.Text));
                     if (checkBox1.Checked)
                     {
                         var paster = new WordPaster("Перемена заказчика юр.docx");
@@ -323,7 +322,6 @@ namespace Praktika2
                     items.Add("<NEW_OSEN>", textBoxNEW_OSEN.Text);
                     items.Add("<NEW_VESNA>", textBoxNEW_VESNA.Text);
                     items.Add("<NEW_PRICE_EKZ>", textBoxNEW_PRICE_EKZ.Text);
-                    items.Add("<STUDENT_F_IO>", ChangeName(textBoxSTUDENT_FIO.Text));
                     if (checkBox1.Checked)
                     {
                         var paster = new WordPaster("Изменение стоимости юр.docx");
@@ -360,23 +358,48 @@ namespace Praktika2
                     }
                     break;
                 case ("Переводы"):
+                    items.Add("<PEREV_DATE>", dateTimePickerPEREV_DATE.Text);
+                    items.Add("<PEREV_NUM>", textboxPEREV_NUM.Text);
+                    items.Add("<P_KOD>", textboxP_KOD.Text);
+                    items.Add("<P_NAPR>", textboxP_NAPR.Text);
+                    items.Add("<P_LEVEL>", textboxP_LEVEL.Text);
+                    items.Add("<P_FORM>", textboxP_FORM.Text);
+                    items.Add("<P_SROK>", textboxP_SROK.Text);
+                    items.Add("<P_IND>", textboxP_IND.Text);
+                    items.Add("<P_FULL_PRICE>", textboxP_FULL_PRICE.Text);
+                    items.Add("<P_YEARS>", textboxP_YEARS.Text);
+                    items.Add("<P_YEARS_PRICE>", textboxP_YEARS_PRICE.Text);
+                    items.Add("<P_OSEN>", textboxP_OSEN.Text);
+                    items.Add("<P_VESNA>", textboxP_VESNA.Text);
+                    items.Add("<P_EKZ>", textboxP_EKZ.Text);
                     if (checkBox1.Checked)
                     {
-
+                        var paster = new WordPaster("Переводы юр.docx");
+                        paster.Process(items);
                     }
                     else
                     {
-
+                        var paster = new WordPaster("Переводы.docx");
+                        paster.Process(items);
                     }
                     break;
                 case ("Перемена цедента"):
+                    items.Add("<CED_DATE>", dateTimePickerCED_DATE.Text);
+                    items.Add("<CED_NUM>", textboxCED_NUM.Text);
+                    items.Add("<NEW_CEDENT>", textboxNEW_CEDENT.Text);
+                    items.Add("<NEW_FIO_ORG>", textboxNEW_FIO_ORG.Text);
+                    items.Add("<NEW_ADRES>", textboxNEW_ADRES.Text);
+                    items.Add("<NEW_PHONE>", textboxNEW_PHONE.Text);
+                    items.Add("<NEW_PASP_BANK>", textboxNEW_PASP_BANK.Text);
                     if (checkBox1.Checked)
                     {
-
+                        var paster = new WordPaster("Перемена цедента юр.docx");
+                        paster.Process(items);
                     }
                     else
                     {
-
+                        var paster = new WordPaster("Перемена цедента.docx");
+                        paster.Process(items);
                     }
                     break;
                 default:
